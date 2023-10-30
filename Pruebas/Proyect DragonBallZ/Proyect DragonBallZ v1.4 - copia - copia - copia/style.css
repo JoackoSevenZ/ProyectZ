@@ -1,0 +1,46 @@
+body {
+    background-color: black;
+}
+img[class="One"]{
+    width: 99%;
+    transform: scale(1.0);
+    border: 2px solid black;
+    border-radius: 20px;
+}
+div img {
+    margin: 0 auto;
+    display: block;
+}
+div {
+    width: 80%;
+    border: 6px solid brown;
+    border-radius: 25px;
+    max-width: 840px;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+}
+section[class="parrafo1"] {
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 21px;
+    display: block;
+    width: 90%;
+    height: auto;
+}
+section[class="parrafo1"] span{
+    position: relative;
+    z-index: 2;
+    top: -120px;
+}
+a{
+    text-decoration: none;
+
+}
+@media screen and (max-width: 613px) {
+    section[class="parrafo1"] {
+        font-size: 17px;
+        color: white;
+    }
+}

@@ -1,0 +1,107 @@
+body {
+    background-color: black;
+}
+section[class="Series"] {
+    margin-top: 50px;
+}
+img {
+    transform: scale(1.02);
+}
+img[class="Kai"] {
+    transform: scale(1.043);
+    margin-top: 0.1px;
+    margin-bottom: -10px;
+}
+div[class="portada"]{
+    overflow: hidden;
+    position: relative;
+    margin: 0 auto;
+    margin-top: 52px;
+    width: 750px;
+    border: 2px solid brown;
+    border-radius: 7px;
+    padding: 0px 0px;
+    padding-top: 2px;
+}
+.parrafo1 {
+    display: block;
+    height: 100%;
+    color: whitesmoke;
+    background-color: rgba(0, 0, 0, 0.52);
+    position: absolute;
+    padding-top: 235px;
+    padding-left: 20px;
+    padding-right: 20px;
+    top: 0px;
+    left: 0;
+    text-align: left;
+    font-size: 24px;
+}
+.parrafo2 {
+    display: block;
+    height: 100%;
+    color: whitesmoke;
+    background-color: rgba(0, 0, 0, 0.52);
+    position: absolute;
+    padding-top: 235px;
+    padding-left: 20px;
+    padding-right: 10px;
+    top: 0px;
+    left: 0;
+    text-align: left;
+    font-size: 24px;
+}
+.parrafo3 {
+    display: block;
+    height: 100%;
+    color: whitesmoke;
+    background-color: rgba(0, 0, 0, 0.52);
+    position: absolute;
+    padding-top: 215px;
+    padding-left: 20px;
+    padding-right: 10px;
+    top: 0px;
+    left: 0;
+    text-align: left;
+    font-size: 24px;
+}
+.parrafo1{
+    opacity: 0;
+    transition: opacity 1.2s;
+}
+
+.portada:hover .parrafo1{
+    opacity: 1;
+}
+.parrafo2{
+    opacity: 0;
+    transition: opacity 1.2s;
+}
+
+.portada:hover .parrafo2{
+    opacity: 1;
+}
+.parrafo3{
+    opacity: 0;
+    transition: opacity 1.2s;
+}
+
+.portada:hover .parrafo3{
+    opacity: 1;
+}
+img {
+    transition: transform .3s;
+}
+.portada:hover img{
+    transform: scale(1.121);
+}
+
+
+
+/********************************/
+/* .portada:hover {
+    transform: scale(1.1);
+}
+.portada img{
+    transition: transform 10s;
+} */

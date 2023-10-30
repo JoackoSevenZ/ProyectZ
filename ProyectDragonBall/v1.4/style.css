@@ -1,0 +1,202 @@
+body {
+    background-image: url(imgs/Background/Celeste.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0 0px;
+}
+section[class="Series"] {
+    width: 100%;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: 20px;
+    margin-right: 10px;
+}
+/* section[class="logoOne"]{
+    position: relative;
+    margin: 0 auto;
+    width: 840px;
+    border: 2px solid brown;
+    border-radius: 7px;
+    padding: 0px 0px;
+    top: -450px;
+    height: 20px;
+} */
+div[class="portada"]{
+    overflow: hidden;
+    position: relative;
+    margin: 0 auto;
+    margin-top: 52px;
+    width: 840px;
+    border: 6px solid darkred;
+    border-radius: 10px;
+    padding: 0px 0px;
+    padding-top: 2px;
+}
+div[class="imgLogoOne"] {
+    position: relative;
+    /* border: 1px solid white; */
+    width: 840px;
+    margin: 0 auto;
+    text-align: right;
+}
+img[class="One"], img[class="Two"], img[class="Three"], img[class="Four"], img[class="Five"] {
+    margin-top: 2px;
+    transform: scale(1.020);
+    border: 1px solid rgba(0, 0, 0, 0.9);
+}
+img[class="imgOne"] {
+    height: 350px;
+    width: 82px;
+    position: absolute;
+    /* border: 1px solid white; */
+    margin-top: -375px;
+    margin-left: -20px;
+}
+img[class="imgTwo"] {
+    height: 380px;
+    width: 75px;
+    position: absolute;
+    margin-top: -380px;
+    margin-left: -7px;
+}
+img[class="imgThree"] {
+    height: 420px;
+    width: 130px;
+    position: absolute;
+    margin-top: -390px;
+    margin-left: -21px;
+}
+img[class="imgFour"] {
+    height: 380px;
+    width: 125px;
+    position: absolute;
+    margin-top: -380px;
+    margin-left: -46px;
+}
+img[class="imgFive"] {
+    height: 390px;
+    width: 137px;
+    position: absolute;
+    margin-top: -390px;
+    margin-left: -46px;
+}
+.imgOne {
+    transition: transform .3s;
+}
+.portada:hover + .imgLogoOne .imgOne {
+    transform: scale(1.2);
+}
+.imgTwo {
+    transition: transform .3s;
+}
+.portada:hover + .imgLogoOne .imgTwo{
+    transform: scale(1.2);
+}
+.imgThree {
+    transition: transform .3s;
+}
+.portada:hover + .imgLogoOne .imgThree {
+    transform: scale(1.12)
+}
+.imgFour {
+    transition: transform .3s;
+}
+.portada:hover + .imgLogoOne .imgFour {
+    transform: scale(1.2);
+}
+.imgFive {
+    transition: transform .3s;
+}
+.portada:hover + .imgLogoOne .imgFive {
+    transform: scale(1.15);
+}
+.parrafo1 {
+    display: block;
+    height: 100%;
+    color: whitesmoke;
+    background-color: rgba(0, 0, 0, 0.52);
+    position: absolute;
+    padding-top: 235px;
+    padding-left: 20px;
+    padding-right: 20px;
+    top: 0px;
+    left: 0;
+    text-align: left;
+    font-size: 24px;
+}
+.parrafo2 {
+    display: block;
+    height: 100%;
+    color: whitesmoke;
+    background-color: rgba(0, 0, 0, 0.52);
+    position: absolute;
+    padding-top: 235px;
+    padding-left: 20px;
+    padding-right: 10px;
+    top: 0px;
+    left: 0;
+    text-align: left;
+    font-size: 24px;
+}
+.parrafo3 {
+    display: block;
+    height: 100%;
+    color: whitesmoke;
+    background-color: rgba(0, 0, 0, 0.52);
+    position: absolute;
+    padding-top: 215px;
+    padding-left: 20px;
+    padding-right: 10px;
+    top: 0px;
+    left: 0;
+    text-align: left;
+    font-size: 24px;
+}
+.parrafo1{
+    opacity: 0;
+    transition: opacity 1.2s;
+}
+
+.portada:hover .parrafo1{
+    opacity: 1;
+}
+
+.parrafo1{
+    opacity: 0;
+    transition: opacity 1.2s;
+}
+.logo:hover .parrafo1{
+    opacity: 1;
+}
+.parrafo2{
+    opacity: 0;
+    transition: opacity 1.2s;
+}
+
+.portada:hover .parrafo2{
+    opacity: 1;
+}
+.parrafo3{
+    opacity: 0;
+    transition: opacity 1.2s;
+}
+
+.portada:hover .parrafo3{
+    opacity: 1;
+}
+img {
+    transition: transform .3s;
+}
+.portada:hover img{
+    transform: scale(1.121);
+}
+
+/********************************/
+/* .logo {  
+    position: absolute;
+    right: -20px;
+    top: 0px;
+    height: 200px;
+    width: 100px;
+} */
+

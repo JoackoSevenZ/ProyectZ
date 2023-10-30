@@ -1,0 +1,177 @@
+body {
+    background-color: black;
+    margin: 0 40px;
+}
+section[class="Series"] {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+section[class="logoOne"]{
+    position: relative;
+    margin: 0 auto;
+    width: 840px;
+    /* border: 2px solid brown; */
+    border-radius: 7px;
+    padding: 0px 0px;
+    top: -450px;
+    height: 20px;
+}
+img[class="imgLogoOne"] {
+    /* border: 1px solid white; */
+    margin-left: 10px;
+    padding-top: 84px;
+}
+div[class="imgLogoOne"] {
+    width: 80px;
+    /* border: 1px solid white; */
+    margin-left: 800px;
+}
+
+/* section[class="logoTwo"] {
+    position: relative;
+    margin: 0 auto;
+    width: 840px;
+    border: 2px solid white;
+    border-radius: 7px;
+    padding:  0 0;
+    top: 450px;
+    height: 20px;
+} */
+img[class="imgLogoTwo"] {
+    /* border: 2px solid white; */
+    margin-left: 25px;
+    padding-top: 60px;
+}
+/* div[class="imgLogoTwo"]{
+    width: 80px;
+    border: 2px solid white;
+    margin-left: 800px;
+} */
+img[class="imgLogoThree"] {
+    margin-left: 12px;
+    padding-top: 60px;
+}
+div[class="imgLogoThree"] {
+    width: 130px;
+    margin-left: 800px;
+}
+img[class="imgLogoFour"] {
+    width: 130px;
+    padding-top: 65px;
+    margin-left: -6px;
+}
+img[class="imgLogoFive"] {
+    padding-top: 57px;
+    width: 120px;
+    margin-left: -4px;
+}
+
+img[class="One"], img[class="Two"], img[class="Five"] {
+    transform: scale(1.02);
+}
+img[class="Kai"] {
+    transform: scale(1.043);
+    margin-top: 0.1px;
+    margin-bottom: -10px;
+}
+div[class="portada"]{
+    overflow: hidden;
+    position: relative;
+    margin: 0 auto;
+    margin-top: 52px;
+    width: 840px;
+    border: 2px solid brown;
+    border-radius: 7px;
+    padding: 0px 0px;
+    padding-top: 2px;
+}
+.parrafo1 {
+    display: block;
+    height: 100%;
+    color: whitesmoke;
+    background-color: rgba(0, 0, 0, 0.52);
+    position: absolute;
+    padding-top: 235px;
+    padding-left: 20px;
+    padding-right: 20px;
+    top: 0px;
+    left: 0;
+    text-align: left;
+    font-size: 24px;
+}
+.parrafo2 {
+    display: block;
+    height: 100%;
+    color: whitesmoke;
+    background-color: rgba(0, 0, 0, 0.52);
+    position: absolute;
+    padding-top: 235px;
+    padding-left: 20px;
+    padding-right: 10px;
+    top: 0px;
+    left: 0;
+    text-align: left;
+    font-size: 24px;
+}
+.parrafo3 {
+    display: block;
+    height: 100%;
+    color: whitesmoke;
+    background-color: rgba(0, 0, 0, 0.52);
+    position: absolute;
+    padding-top: 215px;
+    padding-left: 20px;
+    padding-right: 10px;
+    top: 0px;
+    left: 0;
+    text-align: left;
+    font-size: 24px;
+}
+.parrafo1{
+    opacity: 0;
+    transition: opacity 1.2s;
+}
+
+.portada:hover .parrafo1{
+    opacity: 1;
+}
+
+.parrafo1{
+    opacity: 0;
+    transition: opacity 1.2s;
+}
+.logo:hover .parrafo1{
+    opacity: 1;
+}
+.parrafo2{
+    opacity: 0;
+    transition: opacity 1.2s;
+}
+
+.portada:hover .parrafo2{
+    opacity: 1;
+}
+.parrafo3{
+    opacity: 0;
+    transition: opacity 1.2s;
+}
+
+.portada:hover .parrafo3{
+    opacity: 1;
+}
+img {
+    transition: transform .3s;
+}
+.portada:hover img{
+    transform: scale(1.121);
+}
+
+/********************************/
+/* .logo {  
+    position: absolute;
+    right: -20px;
+    top: 0px;
+    height: 200px;
+    width: 100px;
+} */
+

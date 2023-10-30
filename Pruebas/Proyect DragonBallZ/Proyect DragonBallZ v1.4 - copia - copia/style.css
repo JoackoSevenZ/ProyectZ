@@ -1,0 +1,197 @@
+body {
+    background-color: black;
+}
+img[class="One"]{
+    width: 99%;
+    transform: scale(1.0);
+    border: 2px solid black;
+    border-radius: 20px;
+}
+div img {
+    margin: 0 auto;
+    display: block;
+}
+div {
+    width: 80%;
+    border: 6px solid brown;
+    border-radius: 25px;
+    max-width: 840px;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+}
+section[class="parrafo1"] {
+    background-color: rgba(0, 0, 0, 0.52);
+    color: whitesmoke;
+    padding-left: 20px;
+    padding-right: 23px;
+    font-size: 28px;    
+    position: absolute;
+    height: 100%;
+    top: 0px;
+    padding-top: 30%;
+}
+@media (min-width: 1660px) {
+    div {
+        max-width: 1600px;
+        border: 12px solid brown;
+    }
+    img[class="One"]{
+        border: 4px solid black;
+    }
+    section[class="parrafo1"] {
+        background-color: rgba(0, 0, 0, 0.52);
+        color: whitesmoke;
+        padding-left: 20px;
+        padding-right: 23px;
+        font-size: 55px;    
+        position: absolute;
+        height: 100%;
+        top: 0px;
+        padding-top: 30%;
+    }
+}
+@media  (max-width: 995px) {
+    section[class="parrafo1"] {
+        font-size: 25px;
+        color: white;
+        padding-top: 34%;
+    }
+
+}
+@media  (max-width: 984px) {
+    section[class="parrafo1"] {
+        font-size: 25px;
+        color: white;
+        padding-top: 29%;
+    }
+
+}
+@media  (max-width: 837px) {
+    section[class="parrafo1"] {
+        font-size: 24px;
+        color: white;
+        padding-top: 28%;
+    }
+
+}
+@media  (max-width: 786px) {
+    section[class="parrafo1"] {
+        font-size: 24px;
+        color: white;
+        padding-top: 23%;
+    }
+
+}
+@media  (max-width: 756px) {
+    section[class="parrafo1"] {
+        font-size: 23px;
+        color: white;
+        padding-top: 24%;
+    }
+}
+@media  (max-width: 739px) {
+    section[class="parrafo1"] {
+        font-size: 23px;
+        color: white;
+        padding-top: 22%;
+    }
+
+}
+@media  (max-width: 700px) {
+    section[class="parrafo1"] {
+        font-size: 23px;
+        color: white;
+        padding-top: 20%;
+    }
+
+}
+@media  (max-width: 669px) {
+    section[class="parrafo1"] {
+        font-size: 21px;
+        color: white;
+        padding-top: 20%;
+    }
+
+}
+@media  (max-width: 637px) {
+    section[class="parrafo1"] {
+        font-size: 21px;
+        color: white;
+        padding-top: 18%;
+    }
+}
+@media  (max-width: 616px) {
+    section[class="parrafo1"] {
+        font-size: 21px;
+        color: white;
+        padding-top: 14%;
+    }
+
+}
+@media  (max-width: 615px) {
+    section[class="parrafo1"] {
+        font-size: 20px;
+        color: white;
+        padding-top: 18%;
+    }
+
+}
+@media  (max-width: 592px) {
+    section[class="parrafo1"] {
+        font-size: 19px;
+        color: white;
+        padding-top: 20%;
+    }
+
+}
+@media  (max-width: 566px) {
+    section[class="parrafo1"] {
+        font-size: 19px;
+        color: white;
+        padding-top: 15%;
+    }
+
+} 
+@media  (max-width: 560px) {
+    section[class="parrafo1"] {
+        font-size: 19px;
+        color: white;
+        padding-top: 12%;
+    }
+
+}
+@media  (max-width: 525px) {
+    section[class="parrafo1"] {
+        font-size: 19px;
+        color: white;
+        padding-top: 8%;
+    }
+
+}
+@media  (max-width: 513px) {
+    section[class="parrafo1"] {
+        font-size: 19px;
+        color: white;
+        padding-top: 6%;
+    }
+
+}
+@media  (max-width: 501px) {
+    section[class="parrafo1"] {
+        font-size: 19px;
+        color: white;
+        padding-top: 4%;
+    }
+
+}
+/* @media  (max-width: 501px) {
+    section[class="parrafo1"] {
+        font-size: 18px;
+        color: white;
+        padding-top: 10%;
+    }
+
+} */
+
+

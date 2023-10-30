@@ -1,0 +1,780 @@
+body {
+    background-color: black;/*Pongo una imagen de fondo del cielo azul*/
+}
+img[class="One"], img[class="Two"], img[class="Three"], img[class="Four"], img[class="Five"]{
+    width: 99%;/*Hago que todas las portadas ocupen el 99% de su contenedor div*/
+    border: 2px solid black;/*Hago que todas las portadas tengan un borde
+                                de dos pixeles solido y negro*/
+    border-radius: 20px; /*Determino el borde de todas las imagenes de portada
+                           en 20px*/
+}
+div[class="portada"] img {
+    margin: 0 auto;/*Centro las imagenes del contendor de las portadas*/
+    display: block;/*Le doy un display en block para que se comporte como
+                     uno*/
+}
+div[class="portada"]{
+    width: 80%; /*Le digo que el contendor de las imagenes de portada
+                  siempre ocupe un 80% de la pantalla*/
+    max-width: 840px; /*Y que su ancho maximo sea de 840px*/
+    border: 6px solid brown;/*a el contendor de las imagenes de portada le doy
+                                un borde de 6px solido de color marron*/
+    border-radius: 25px;/*Determino el borde de todos los contenedors de las 
+                          imagenes de portada en 25px*/
+    margin: 0 auto;/*Centro los div contenedores de las imagenes portada*/
+    overflow: hidden; /*Esto es para que no se desborde la imagen al agrandarse*/
+    position: relative;/*utilizo la posicion relativa para que el div contenedor
+                         de las imagenes de portada se muevan en relacion a su 
+                         posicion original además para que no afecte al contenido
+                         */
+    margin-top: 50px;/*Le digo que haya un espacio de 50px en la parte superior
+                       de cada uno de los divs que contienen las portadas*/
+}
+img {
+    transition: transform .3s;/*Le doy a todas las imagenes de portada una 
+                                transicion de 3 milisegundos al agrandrandarse*/
+}
+.portada:hover img {
+    transform: scale(1.121)/*Al pasar el mouse por el contenedor de la imagenes
+                             de portada la imagen se va a agrandar*/
+}
+section[class="parrafo1"], section[class="parrafo2"], section[class="parrafo3"], section[class="parrafo4"], section[class="parrafo5"] {
+    background-color: rgba(0, 0, 0, 0.52);/*A todos las secciones le doy un
+                                              color de fondo negro transparente*/
+    color: whitesmoke;/*Pongo el color de las letras en "blanco humo"*/
+    font-size: 29px;/*Determino el tamaño de la fuente en 29px*/
+    position: absolute;/*Posicion absoluta para se posicione de forma precisa y 
+                         ademas para que este por encima de la imagen del div*/
+    height: auto;/*El alto de cada section adapta proporcionalmente dependiendo 
+                   del ancho*/
+    width: 96%; /*Le decimos que ocupe el 96% del div que lo contiene */
+    bottom: 0px;/* lo ponemos al tope de inferior*/
+    padding-top: 50%;/* agrandamos un 50% el espacio interior del todos los 
+                        sections para que el color transparente negro ocupe todo
+                        el alto tapando la portada*/
+    padding-bottom: 10px;/*Subimos un poco el texto que contienen los sections
+                           poniendole un espacio interior inferior de 10px*/
+    padding-left: 10px;  /*acomodo el texto dandole un espacio interior izquierdo
+                           de 10px*/
+    padding-right: 30px;/*acomodo el texto dandole un espacio interior derecho
+                          de 30px*/
+}
+
+/*a todas las secciones que contienen texto las desaparesco y le doy una
+  transicion de opacidad de 1.2 segundos*/
+.parrafo1, .parrafo2, .parrafo3, .parrafo4, .parrafo5{
+    opacity: 0;
+    transition: opacity 1.2s;
+}
+/***********************************************************************************************************************/
+
+/*Aca le digo que cuando se pase el mouse por encima del div con clase portada 
+  el texto del section correspondiente vuelve aparecer*/
+.portada:hover .parrafo1 {
+    opacity: 1;
+}
+.portada:hover .parrafo2 {
+    opacity: 1;
+}
+.portada:hover .parrafo3 {
+    opacity: 1;
+}
+.portada:hover .parrafo4 {
+    opacity: 1;
+}
+.portada:hover .parrafo5 {
+    opacity: 1;
+}
+/***********************************************************************************************************************************/
+
+div[class="imgLogoOne"] {
+    position: relative;/*utilizo la posicion relativa para que el div contenedor
+                         de las imagenes de portada se muevan en relacion a su
+                         posicion original además para que no afecte al contenido*/
+    /* border: 1px solid white; */
+    width: 80%;/*Le doy el mismo ancho que el div de class portada*/
+    max-width: 840px;/*Y tambien el mismo ancho-maximo para que respete las 
+                       proporciones*/
+    margin: 0 auto;/*Lo centro*/
+    text-align: right; /*a la imagen la aliño a la derecha*/
+}
+
+/*XXXXXXXX Modelado de logos XXXXXXXX*/
+
+img[class="imgOne"] {
+    height: auto;/*El alto de cada logo adapta proporcionalmente dependiendo 
+                   del ancho*/
+    width: 10.3%;/*Le digo que su ancho sea siempre un 10% proporcionalmente*/
+    position: absolute;/* Posiciono el logo de manera absoluta para que este 
+                          se posicione de manera precisa y por encima del div*/
+    margin-top: -50%;/*Lo posiciono en el medio del borde derecho del div clase
+                       portada*/
+    margin-left: -3%;/*Lo posiciono por encima del borde derecho*/
+}
+img[class="imgTwo"] {
+    height: auto;/*El alto de cada logo adapta proporcionalmente dependiendo 
+                   del ancho*/
+    width: 12%;/*Le digo que su ancho sea siempre un 12% proporcionalmente*/
+    position: absolute;/* Posiciono el logo de manera absoluta para que este 
+                          se posicione de manera precisa y por encima del div*/
+    margin-top: -51%;/*Lo posiciono en el medio del borde derecho del div clase
+                       portada*/
+    margin-left: -1.5%;/*Lo posiciono por encima del borde derecho*/
+}
+img[class="imgThree"] {
+    height: auto;/*El alto de cada logo adapta proporcionalmente dependiendo 
+                   del ancho*/
+    width: 19.3%;/*Le digo que su ancho sea siempre un 21% proporcionalmente*/
+    position: absolute;/* Posiciono el logo de manera absoluta para que este 
+                          se posicione de manera precisa y por encima del div*/
+    margin-top: -48%;/*Lo posiciono en el medio del borde derecho del div clase
+                       portada*/
+    margin-left: -5.5%;/*Lo posiciono por encima del borde derecho*/
+}
+
+.portada:hover + div[class="imgLogoOne"] img[class="imgThree"] {
+    animation-name: fade; /*nombre de la animacion*/
+    animation-duration: .7s; /* duración de la animación */
+  }
+@keyframes fade {
+    from { opacity: 1; } /*Esto hará que la imagen se vuelva parcialmente
+                             transparente gradualmente cuando el cursor pase sobre ella.*/
+    to { opacity: 0.4; }
+  }
+  
+img[class="imgFour"] {
+    height: auto;/*El alto de cada logo adapta proporcionalmente dependiendo
+                   del ancho*/
+    width: 16.3%;/*Le digo que su ancho sea siempre un 16.3% proporcionalmente*/
+    position: absolute;/* Posiciono el logo de manera absoluta para que este  
+                          se posicione de manera precisa y por encima del div*/
+    margin-top: -52%;/*Lo posiciono en el medio del borde derecho del div clase
+                       portada*/
+    margin-left: -6%;/*Lo posiciono por encima del borde derecho*/
+}
+img[class="imgFive"] {
+    height: auto;/*El alto de cada logo adapta proporcionalmente dependiendo
+                   del ancho*/
+    width: 19.5%;/*Le digo que su ancho sea siempre un 19.5% proporcionalmente*/
+    position: absolute;/* Posiciono el logo de manera absoluta para que este 
+                          se posicione de manera precisa y por encima del div*/
+    margin-top: -50.4%;/*Lo posiciono en el medio del borde derecho del div clase
+                         portada*/
+    margin-left: -7%;/*Lo posiciono por encima del borde derecho*/
+}
+
+/*Le doy una transicion de transformacion de 3 milisegundo a agrandrandarse*/
+img {
+    transition: transform .3s;
+}
+/************************************************************************/
+
+/*Al pasar el mouse por encima dle div con class portada el la imagen de logo
+  correspondiente a su portada se agranda*/
+.portada:hover + div[class="imgLogoOne"] img[class="imgOne"] {
+    transform: scale(1.2);
+}
+.portada:hover + div[class="imgLogoOne"] img[class="imgTwo"] {
+    transform: scale(1.2);
+}
+.portada:hover + div[class="imgLogoOne"] img[class="imgThree"] {
+    transform: scale(1.2)
+}
+.portada:hover + div[class="imgLogoOne"] img[class="imgFour"] {
+    transform: scale(1.2)
+}
+.portada:hover + div[class="imgLogoOne"] img[class="imgFive"] {
+    transform: scale(1.2)
+}
+/**********************************************************************************************************************/
+
+/*Cambiando distintas propiedades para que el contenido se adapte a pantallas
+  grandes*/
+
+@media (min-width: 1647px) {
+    div[class="portada"] {
+        max-width: 1100px; 
+        border: 9px solid brown;
+    }
+    section[class="parrafo1"], section[class="parrafo2"], section[class="parrafo3"], section[class="parrafo4"], section[class="parrafo5"] {
+        padding-right: 50px;
+        font-size: 50px;
+    }
+    img[class="One"] {
+        border: 3px solid black;
+    }
+    div[class="imgLogoOne"] {
+        max-width: 1100px;
+    }
+}
+@media (min-width: 1647px) and (min-width: 1977px){
+    div[class="portada"] {
+        max-width: 1200px; 
+        border: 9px solid brown;
+    }
+    section[class="parrafo1"], section[class="parrafo2"], section[class="parrafo3"], section[class="parrafo4"], section[class="parrafo5"] {
+        padding-right: 50px;
+        font-size: 52px;
+    }
+    img[class="One"] {
+        border: 3px solid black;
+    }
+    div[class="imgLogoOne"] {
+        max-width: 1200px;
+    }
+}
+@media (min-width: 1647px) and (min-width: 1977px) and (min-width: 2636px){
+    div[class="portada"] {
+        max-width: 1500px; 
+        border: 9px solid brown;
+    }
+    section[class="parrafo1"], section[class="parrafo2"], section[class="parrafo3"], section[class="parrafo4"], section[class="parrafo5"] {
+        padding-right: 50px;
+        font-size: 62px;
+    }
+    img[class="One"] {
+        border: 3px solid black;
+    }
+    div[class="imgLogoOne"] {
+        max-width: 1500px;
+    }
+}
+@media (min-width: 1647px) and (min-width: 1977px) and (min-width: 2636px) and (min-width: 3954px){
+    div[class="portada"] {
+        max-width: 2100px; 
+        border: 9px solid brown;
+    }
+    section[class="parrafo1"], section[class="parrafo2"], section[class="parrafo3"], section[class="parrafo4"], section[class="parrafo5"] {
+        padding-right: 50px;
+        font-size: 102px;
+    }
+    img[class="One"] {
+        border: 3px solid black;
+    }
+    div[class="imgLogoOne"] {
+        max-width: 2100px;
+    }
+}
+@media (min-width: 1647px) and (min-width: 1977px) and (min-width: 2636px) and (min-width: 3954px) and (min-width: 5272px){
+    div[class="portada"] {
+        max-width: 2600px; 
+        border: 9px solid brown;
+        margin-top: 100px;
+    }
+    section[class="parrafo1"], section[class="parrafo2"], section[class="parrafo3"], section[class="parrafo4"], section[class="parrafo5"] {
+        padding-right: 50px;
+        font-size: 120px;
+    }
+    img[class="One"] {
+        border: 3px solid black;
+    }
+    div[class="imgLogoOne"] {
+        max-width: 2600px;
+    }
+}
+/*******************************************************************************************************/
+
+/*Cambiando el tamaño de la fuente de la letra del parrafo1 de la primer portada para que se adapte a distintas pantallas*/
+
+@media (max-width: 732px) {
+    section[class="parrafo1"]  {
+        font-size: 27px;
+    }
+}
+
+@media (max-width: 681px) {
+    section[class="parrafo1"] {
+        font-size: 26px;
+    }
+}
+
+@media (max-width: 661px) {
+    section[class="parrafo1"] {
+        font-size: 25px;
+    }
+}
+@media (max-width: 617px) {
+    section[class="parrafo1"]  {
+        font-size: 24px;
+    }
+}
+@media (max-width: 602px) {
+    section[class="parrafo1"] {
+        font-size: 24px;
+    }
+}
+@media (max-width: 595px) {
+    section[class="parrafo1"] {
+        font-size: 23px;
+    }
+}
+@media (max-width: 585px) {
+    section[class="parrafo1"] {
+        font-size: 22px;
+    }
+}
+@media (max-width: 577px) {
+    section[class="parrafo1"] {
+        font-size: 22px;
+    }
+}
+@media (max-width: 565px) {
+    section[class="parrafo1"]{
+        font-size: 20.5px;
+    }
+}
+@media (max-width: 550px) {
+    section[class="parrafo1"] {
+        font-size: 20px;
+    }
+}
+@media (max-width: 515px) {
+    section[class="parrafo1"] {
+        font-size: 19px;
+    }
+}
+@media (max-width: 500px) {
+    section[class="parrafo1"] {
+        font-size: 18px;
+    }
+}
+@media (max-width: 452px) {
+    section[class="parrafo1"] {
+        font-size: 16px;
+    }
+}
+@media (max-width: 403px) {
+    section[class="parrafo1"] {
+        font-size: 15px;
+    }
+}
+@media (max-width: 380px) {
+    section[class="parrafo1"] {
+        font-size: 14px;
+    }
+}
+@media (max-width: 355px) {
+    section[class="parrafo1"] {
+        font-size: 14px;
+        padding-bottom: 7px;
+    }
+}
+@media (max-width: 354px) {
+    section[class="parrafo1"] {
+        font-size: 13.01px;
+    }
+}
+@media (max-width: 331px) {
+    section[class="parrafo1"]{
+        font-size: 12px;
+    }
+}
+/*************************************************************************************/
+
+/*Cambiando el tamaño de la fuente de la letra del parrafo2 de la segunda portada para que se adapte a distintas pantallas*/
+
+@media (max-width: 713px) {
+    section[class="parrafo2"]{
+        font-size: 27px;
+    }
+}
+@media (max-width: 677px) {
+    section[class="parrafo2"]{
+        font-size: 26px;
+    }
+}
+@media (max-width: 655px) {
+    section[class="parrafo2"]{
+        font-size: 25px;
+    }
+}
+@media (max-width: 621px) {
+    section[class="parrafo2"]{
+        font-size: 24px;
+    }
+}
+@media (max-width: 603px) {
+    section[class="parrafo2"]{
+        font-size: 23px;
+    }
+}
+@media (max-width: 577px) {
+    section[class="parrafo2"]{
+        font-size: 22px;
+    }
+}
+@media (max-width: 561px) {
+    section[class="parrafo2"]{
+        font-size: 21px;
+    }
+}
+@media (max-width: 537px) {
+    section[class="parrafo2"]{
+        font-size: 20px;
+    }
+}
+@media (max-width: 513px) {
+    section[class="parrafo2"]{
+        font-size: 19px;
+    }
+}
+@media (max-width: 472px) {
+    section[class="parrafo2"]{
+        font-size: 18px;
+    }
+}
+@media (max-width: 448px) {
+    section[class="parrafo2"]{
+        font-size: 17px;
+    }
+}
+@media (max-width: 424px) {
+    section[class="parrafo2"]{
+        font-size: 16px;
+    }
+}
+@media (max-width: 401px) {
+    section[class="parrafo2"]{
+        font-size: 15px;
+    }
+}
+@media (max-width: 376px) {
+    section[class="parrafo2"]{
+        font-size: 14px;
+    }
+}
+@media (max-width: 352px) {
+    section[class="parrafo2"]{
+        font-size: 13px;
+    }
+}
+@media (max-width: 340px) {
+    section[class="parrafo2"]{
+        font-size: 12px;
+    }
+}
+@media (max-width: 323px) {
+    section[class="parrafo2"]{
+        font-size: 11.8px;
+    }
+}
+/*************************************************************************************/
+
+/*Cambiando el tamaño de la fuente de la letra del parrafo3 de la tercer portada para que se adapte a distintas pantallas*/
+
+@media (max-width: 730px) {
+    section[class="parrafo3"] {
+        font-size: 27px;
+    }
+}
+@media (max-width: 690px) {
+    section[class="parrafo3"] {
+        font-size: 26px;
+    }
+}
+@media (max-width: 665px) {
+    section[class="parrafo3"] {
+        font-size: 25px;
+    }
+}
+@media (max-width: 627px) {
+    section[class="parrafo3"] {
+        font-size: 24px;
+    }
+}
+@media (max-width: 606px) {
+    section[class="parrafo3"] {
+        font-size: 23px;
+    }
+}
+@media (max-width: 587px) {
+    section[class="parrafo3"] {
+        font-size: 21px;
+    }
+}
+@media (max-width: 572px) {
+    section[class="parrafo3"] {
+        font-size: 20.5px;
+    }
+}
+@media (max-width: 537px) {
+    section[class="parrafo3"] {
+        font-size: 20px;
+    }
+}
+@media (max-width: 534px) {
+    section[class="parrafo3"] {
+        font-size: 19px;
+    }
+}
+@media (max-width: 514px) {
+    section[class="parrafo3"] {
+        font-size: 18px;
+    }
+}
+@media (max-width: 475px) {
+    section[class="parrafo3"] {
+        font-size: 17px;
+    }
+}
+@media (max-width: 458px) {
+    section[class="parrafo3"] {
+        font-size: 16.71px;
+    }
+}
+@media (max-width: 457px) {
+    section[class="parrafo3"] {
+        font-size: 16px;
+    }
+}
+@media (max-width: 424px) {
+    section[class="parrafo3"] {
+        font-size: 15.39px;
+    }
+}
+@media (max-width: 416px) {
+    section[class="parrafo3"] {
+        font-size: 15px;
+    }
+}
+@media (max-width: 398px) {
+    section[class="parrafo3"] {
+        font-size: 14px;
+    }
+}
+@media (max-width: 378px) {
+    section[class="parrafo3"] {
+        font-size: 13.4px;
+    }
+}
+@media (max-width: 370px) {
+    section[class="parrafo3"] {
+        font-size: 13px;
+    }
+}
+@media (max-width: 359px) {
+    section[class="parrafo3"] {
+        font-size: 12px;
+    }
+}
+@media (max-width: 333px) {
+    section[class="parrafo3"] {
+        font-size: 11.8px;
+    }
+}
+@media (max-width: 327px) {
+    section[class="parrafo3"] {
+        font-size: 11.75px;
+    }
+}
+/*************************************************************************************/
+
+/*Cambiando el tamaño de la fuente de la letra del parrafo4 de la cuarta portada para que se adapte a distintas pantallas*/
+
+@media (max-width: 764px){
+    section[class="parrafo4"]{
+        font-size: 27px;
+    }
+}
+@media (max-width: 713px){
+    section[class="parrafo4"]{
+        font-size: 26px;
+    }
+}
+@media (max-width: 688px){
+    section[class="parrafo4"]{
+        font-size: 25px;
+    }
+}
+@media (max-width: 663px){
+    section[class="parrafo4"]{
+        font-size: 24px;
+    }
+}
+@media (max-width: 638px){
+    section[class="parrafo4"]{
+        font-size: 23px;
+    }
+}
+@media (max-width: 613px){
+    section[class="parrafo4"]{
+        font-size: 22px;
+    }
+}
+@media (max-width: 587px){
+    section[class="parrafo4"]{
+        font-size: 21px;
+    }
+}
+@media (max-width: 575px){
+    section[class="parrafo4"]{
+        font-size: 20.7px;
+    }
+}
+@media (max-width: 555px){
+    section[class="parrafo4"]{
+        font-size: 20px;
+    }
+} 
+@media (max-width: 537px){
+    section[class="parrafo4"]{
+        font-size: 19px;
+    }
+}
+@media (max-width: 514px){
+    section[class="parrafo4"]{
+        font-size: 18px;
+    }
+}
+@media (max-width: 475px){
+    section[class="parrafo4"]{
+        font-size: 17px;
+    }
+}
+@media (max-width: 456px){
+    section[class="parrafo4"]{
+        font-size: 16px;
+    }
+}
+@media (max-width: 424px){
+    section[class="parrafo4"]{
+        font-size: 15px;
+    }
+}
+@media (max-width: 398px){
+    section[class="parrafo4"]{
+        font-size: 14px;
+    }
+}
+@media (max-width: 378px){
+    section[class="parrafo4"]{
+        font-size: 13px;
+    }
+}
+@media (max-width: 352px){
+    section[class="parrafo4"]{
+        font-size: 12.3px;
+    }
+}
+@media (max-width: 334px){
+    section[class="parrafo4"]{
+        font-size: 12px;
+    }
+}
+@media (max-width: 327px){
+    section[class="parrafo4"]{
+        font-size: 11.75px;
+    }
+}
+/**************************************************************************************************/
+
+/*Cambiando el tamaño de la fuente de la letra del parrafo5 de la quinta portada para que se adapte a distintas pantallas*/
+@media  (max-width: 790px) {
+    section[class="parrafo5"] {
+        font-size: 27px;
+    }
+}
+@media  (max-width: 744px) {
+    section[class="parrafo5"] {
+        font-size: 26px;
+    }
+}
+@media  (max-width: 716px) {
+    section[class="parrafo5"] {
+        font-size: 24px;
+    }
+}
+@media  (max-width: 702px) {
+    section[class="parrafo5"] {
+        font-size: 25px;
+    }
+}
+@media  (max-width: 690px) {
+    section[class="parrafo5"] {
+        font-size: 24px;
+    }
+}
+@media  (max-width: 663px) {
+    section[class="parrafo5"] {
+        font-size: 23px;
+    }
+}
+@media  (max-width: 637px) {
+    section[class="parrafo5"] {
+        font-size: 22px;
+    }
+}
+@media  (max-width: 612px) {
+    section[class="parrafo5"] {
+        font-size: 21px;
+    }
+}
+@media  (max-width: 590px) {
+    section[class="parrafo5"] {
+        font-size: 20px;
+    }
+}
+@media  (max-width: 558px) {
+    section[class="parrafo5"] {
+        font-size: 19px;
+    }
+}
+@media  (max-width: 530px) {
+    section[class="parrafo5"] {
+        font-size: 19px;
+    }
+}
+@media  (max-width: 553px) {
+    section[class="parrafo5"] {
+        font-size: 18px;
+    }
+}
+@media  (max-width: 505px) {
+    section[class="parrafo5"] {
+        font-size: 17px;
+    }
+}
+@media  (max-width: 464px) {
+    section[class="parrafo5"] {
+        font-size: 16px;
+    }
+}
+@media  (max-width: 438px) {
+    section[class="parrafo5"] {
+        font-size: 15px;
+    }
+}
+@media  (max-width: 411px) {
+    section[class="parrafo5"] {
+        font-size: 14px;
+    }
+}
+@media  (max-width: 385px) {
+    section[class="parrafo5"] {
+        font-size: 13px;
+    }
+}
+@media  (max-width: 366px) {
+    section[class="parrafo5"] {
+        font-size: 12px;
+    }
+}
+@media  (max-width: 352px) {
+    section[class="parrafo5"] {
+        font-size: 11.7px;
+    }
+}
+@media  (max-width: 324px) {
+    section[class="parrafo5"] {
+        font-size: 11.52px;
+    }
+}
+/**************************************************************************************************/
+
+
+
+
+
+/* .parrafo1, .parrafo2, .parrafo3, .parrafo4, .parrafo5 {
+    opacity: 1;
+} */

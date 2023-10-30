@@ -1,0 +1,102 @@
+/* section[class="contenedor"] {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+
+section[class="contenedor"] img {
+    width: 300px;
+  } */
+section[class="contenedor"] {
+    /* width: 84%; */
+    display: flex;
+    flex-wrap: wrap;
+    border: 2px solid brown;
+    margin-top: 5%;
+    /**********/
+  }
+
+section[class="contenedor"] div {
+    margin: 0 auto;
+    width: 30%;
+    /* min-width: 25%; */
+    border-radius: 25px;
+    border: 2px solid brown;
+    background-color: black;
+    overflow: hidden;
+    margin-top: 2%;
+    margin-bottom: 1%;
+  }
+
+section[class="contenedor"] img {
+    margin: 0 auto;
+    margin-top: 3px;
+    width: 99%;
+    border: 2px solid black;
+    border-radius: 25px;
+  }
+section[class="logo"] {
+  /* border: 2px solid black; */
+  width: 44%;
+  margin: 0 auto;
+  height: 0px;
+
+}
+section[class="logo"] img[class="isLogo"] {
+  border: none;
+  width: 44%;
+  height: auto;
+  position: absolute;
+  margin-top: -5.5%;
+}
+
+section[class="contenedor"] {
+  transition: width .3s;
+}
+
+/* section[class="contenedor"]:hover {
+  border: 2px solid brown;
+  position: static;
+  left: auto;
+} */
+@media (max-width: 1250px){
+    section[class="contenedor"] div {
+        min-width: 44%;
+        margin-bottom: 3%;
+      }
+}
+
+@media (max-width: 1076px){
+    section[class="contenedor"] div {
+        min-width: 57%;
+      }
+}
+
+@media (max-width: 993px){
+  section[class="contenedor"] div {
+      min-width: 62%;
+    }
+}
+
+@media (max-width: 808px){
+  section[class="contenedor"] div {
+      min-width: 70%;
+    }
+}
+
+@media (max-width: 707px){
+  section[class="contenedor"] div {
+      min-width: 73%;
+    }
+} 
+
+@media (max-width: 680px){
+  section[class="contenedor"] div {
+      min-width: 80%;
+    }
+} 
+@media (max-width: 570px){
+  section[class="contenedor"] div {
+      min-width: 90%;
+    }
+} 

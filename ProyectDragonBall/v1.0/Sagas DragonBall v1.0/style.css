@@ -1,0 +1,18 @@
+body {
+    background-color: black;
+    margin: 20px 50px;
+}
+section[class="Sagas"] {
+    border: 2px solid white;
+    border-radius: 7px;
+    width: 90%;
+    text-align: center;
+}
+.SagaPilaf {
+    border: 1px solid red;
+    border-radius: 7px;
+    width: 25%;
+    margin: 20px 12px;
+    padding-top: 3px;
+    display: inline-block ;
+}

@@ -1,0 +1,32 @@
+body {
+    background-color: black;
+}
+section[class="Sagas"] {
+    margin-top: 120px;
+    width: 1020px;
+}
+div[class="logoOne"] {
+    width: 100%;
+    border: 2px solid white;
+    margin: auto;
+    text-align: center;
+    position: relative;
+    display: block;
+}
+div[class="logoOne"] img{
+    margin-top: -60px;
+}
+/* div {
+    transform: transition 10s ease;
+} */
+div:hover {
+    /* transition: transform 10s ease; */
+    height: 400px;
+}
+.SerieOne {
+    border: 2px solid white;
+    width: 33%;
+}
+.SerieOne p {
+    color: white;
+}

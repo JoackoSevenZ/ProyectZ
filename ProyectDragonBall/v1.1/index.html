@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+ background-color: brown;
+}
+.saga{
+ margin-left: 10px;
+ margin-right: 7px;
+}
+div[class="portada"] {
+ display: flex;
+ border: 2px solid black;
+ text-align: center;
+ border-radius: 7px;
+ width: 750px;
+ margin: 0 auto;
+ margin-top: 21px; 
+}
+img[class="portada"] {
+ position: relative;
+}
+section[class="text"] {
+ position: absolute;
+ top: 0;
+ left: 0;
+ width: 100%;
+ height: 100%;
+ background-color: rgba(0,0,0,0.5);
+ opacity: 0;
+ transition: opacity 1s;
+}
+section[class="text"] p {
+ color: white;
+}
+img[class="portada"]:hover + section[class="text"] {
+ opacity: 1;
+}
+</style>
+</head>
+<body>
+<section class="saga">
+ <div class="portada">
+ <img class="portada" src="imgs/Dragon ball.jpg" alt="DragonBall-Portada" width="100%" height="380">
+ <section class="text">
+ <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maxime nemo unde reiciendis totam esse a atque cum architecto itaque ab dolorem natu
+ </section>
+ </div>
+ <div class="portada">
+ <img class="portada" src="imgs/Dragon-Ball-Z.webp" alt="Dragon-Ball-Z-Portada" width="100%" height="380">
+ <section class="text">
+ <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maxime nemo unde reiciendis totam esse a atque cum architecto itaque ab dolorem natu
+ </section>
+ </div>
+ <div class="portada">
+ <img class="portada" src="imgs/Dragon-Ball-Super.jpg" alt="Dragon-Ball-Super-Portada" width="100%" height="380">
+ <section class="text">
+ <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maxime nemo unde reiciendis totam esse a atque cum architecto itaque ab dolorem natu
+ </section>
+ </div>
+</section>
+</body>
+</html>
