@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../Styles/style.css">
+</head>
+<body class="bodyForm">
+    
+    <h1><!--Abro la etiqueta de de h1 o titulo principal-->
+        <u><!--Lo subrayo con la etiqueta underline-->
+            Cuestionario de DragonBall<!--Titulo principla-->
+        </u>
+    </h1><!--Cierro el elemento h1-->
+    <p><!--etiqueta de apertura del parrafo-->
+        Por favor completa la Informacion requerida<!--parrafo-->
+    </p><!--etiqueta de cierre de un parrafo-->
+    <section class="form"><!--Creo una seccion con clase form-->
+        <form action=""><!--etiqueta de apertura del form o formulario-->
+            <fieldset><!--etiqueta de apertura del fieldset o seccion del formulario
+            -->
+                <h2><!--etiqueta de apertura del h2 o subtitulo-->
+                    Informacion personal<!--mi subtitulo-->
+                </h2><!--etiqueta de cierre del h2-->
+                <label for="nombre">
+                    Nombre<input type="text" id="nombre" name="nombre" placeholder="Ejemplo: Pepe" required>
+                </label>
+                <label for="apellido">
+                    Apellido<input type="text" id="apellido" name="apellido" placeholder="Ejemplo: Gonzales">
+                </label>
+                <label for="edad">
+                    Fecha de nacimiento<input type="date" id="edad" name="edad">
+                </label>
+                <label for="mail">
+                    Mail<input type="email" id="mail" name="mail" placeholder="Ejemplo: PepeG@gmail.com">
+                </label>
+            </fieldset>
+            <fieldset>
+                <h2>
+                    DragonBall Questions
+                </h2>
+                
+                <label for="personje">
+                    Personaje favorito<input type="text" id="personje" name="Personje" placeholder="Ejemplo: Krilin">
+                </label>
+                <label for="villano">
+                    Villano favorito<input type="text" id="villano" name="villano" placeholder="Ejemplo: Freezer">
+                </label>
+                <label for="serie">
+                    <legend> Serie favorita</legend>
+                    <div class="enlinea">
+                        <label for="DB" class="pp">
+                            <input type="radio" id="DB" name="serie" checked><span>DragonBall</span>
+                        </label>
+                        <iframe src="https://www.youtube.com/embed/GFxyP8Kxp1c?si=sN31T_F2s9wwCl8r" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        <label for="DBZ">
+                            <input type="radio" id="DBZ" name="serie"><span>DragonBall Z</span>
+                        </label>
+                        <iframe src="https://www.youtube.com/embed/cie7scVUdQE?si=9Yihd03eJain6qbX" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        <label for="DBZKai">
+                            <input type="radio" id="DBZKai" name="serie"><span>DragonBall Z Kai</span> 
+                        </label>
+                        <iframe src="https://www.youtube.com/embed/EadRAjL41Kg?si=PbgItTmvHAWI3jDN" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        <label for="DBGT">
+                            <input type="radio" id="DBGT" name="serie"><span>DragonBall GT</span>
+                        </label>
+                        <iframe src="https://www.youtube.com/embed/wgZ-ATUGXDw?si=3bUktL-hhH-Ax4Kz" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        <label for="DBS">
+                            <input type="radio" id="DBS" name="serie"><span>DragonBall Super</span>
+                        </label>
+                        <iframe src="https://www.youtube.com/embed/FWKUQupQniQ?si=2-LPyiLssBwglauC&amp;start=6" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    </div>
+                <label for="saga" class="labelOptions">
+                   <span>Saga favorita</span><select name="saga" id="saga">
+                        <option value="">
+                            (Selecciona uno)
+                        </option>
+                        <option value="DBPilaf">
+                            Saga de Pilaf
+                        </option>
+                        <option value="DBTorneo21">
+                            Saga Torneo de las Artes Marciales N°21
+                        </option>
+                        <option value="DBRedRibbon">
+                            Saga Ejertito del Liston Rojo
+                        </option>
+                        <option value="DBUranaiBaba">
+                            Saga El Palacio de Uranai Baba
+                        </option>
+                        <option value="DBTorneo22">
+                            Saga Torneo de las Artes Marciales N°22
+                        </option>
+                        <option value="DBDaimaku">
+                            Saga Piccolo Daimaku
+                        </option>
+                        <option value="DBTorneo23">
+                            Saga Torneo de las Artes Marciales N°23
+                        </option>
+                        <option value="DBZSaiyajin">
+                            Saga Saiyajin
+                        </option>
+                        <option value="DBZFreezer">
+                            Saga de Freezer
+                        </option>
+                        <option value="DBZGarlickJr">
+                            Saga Garlick jr
+                        </option>
+                        <option value="DBZCell">
+                            Saga de Cell
+                        </option>
+                        <option value="DBZBuu">
+                            Saga de Majin Buu
+                        </option>
+                        <option value="DBGT">
+                            Saga El Gran Viaje
+                        </option>
+                        <option value="DBGT">
+                            Saga de Baby
+                        </option>
+                        <option value="DBGT">
+                            Saga Super N°17
+                        </option>
+                        <option value="DBGT">
+                            Saga Los Dragones Oscuros
+                        </option>
+                        <option value="DBS">
+                            Saga La Batalla de los Dioses de la Destruccion
+                        </option>
+                        <option value="DBS">
+                            Saga La resurreccion de Freezer
+                        </option>
+                        <option value="DBS">
+                            Saga Universo 6 y 7
+                        </option>
+                        <option value="DBS">
+                            Saga Black Goku
+                        </option>
+                        <option value="DBS">
+                            Saga Torneo del Poder
+                        </option>
+                    </select>
+                </label>
+            </fieldset>
+            <div class="enlineaDos">
+                <label for="terminos&Condiciones">
+                    <input type="checkbox" name="Condiciones" id="terminos&Condiciones" required>Acepto los <a href="">Terminos y condiciones</a>
+                </label>
+            </div>
+            <input type="submit" >
+        </form>
+        <div class="ButtonsContainer">
+            <a href="./../index.html">
+                <button type="button" class="btn btn-success">
+                    Ir a Series
+                </button>
+            </a>
+            <a href="Sagas.html">
+                <button type="button" class="btn btn-success">
+                    Ir a Sagas
+                </button>
+            </a>
+            <a href="">
+                <a href="#" class="btn btn-secondary disabled" tabindex="-1" role="button" aria-disabled="true">Personajes</a>
+            </a>
+        </div>
+    </section>
+</body>
+</html>

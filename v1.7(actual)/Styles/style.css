@@ -1,0 +1,2002 @@
+/*Estilos Barra de navegacion*/
+
+#nav {
+    background-color: black;/*Al nav con id nav le doy un color de fondo negro*/
+    width: 100%;/*Un ancho del 100 porciento para que ocupe todo el ancho de su contenedor
+                  header*/
+    border-bottom: 1.5px solid white;/*Al nav le doy borde inferior de 1 pixel y medio, 
+                                         solido y blanco*/
+    height: 62px;/*Le doy un alto de 62 pixeles*/
+}
+img[class="menuHamburger"] {
+    width: 102px;/*A la imagen con clase menuHamburger le doy un ancho de 102px*/
+    height: auto;/*y un height en auto para que se adapte proporcionalmente mientras cambie
+                   el tamaño de la pantalla*/
+    margin-top: 2.5px;/*Lo bajo 2 pixeles y medio para centrarlo*/
+}
+input[type="checkbox"] {
+    display: none;/*Oculto el input tipo checkbox(casilla de verificacion)*/
+}
+.indice {
+    position: absolute;/*div class indice, que es el menu desplegable, lo pongo por encima
+    */
+    background-color: white;/*Al div le doy un color de fondo blanco*/
+    width: 0%;/*Le doy un ancho de 0% para ocultarlo*/
+    font-size: 0;/*Oculto las letras tambien que contiene el div con una fuente en cero*/
+    transition: all 1s ease;/*A todo le doy una transicion de 1 segundo*/
+    height: 30px;/*al div con clase indice le doy un alto de 30 pixeles*/
+    margin-top: -2px;/*Su hasta que toque el nav dandole un espacio exterior-superior
+                       de menos dos pixeles*/
+}
+.indice ul {
+    margin-top: 4px;/*Centro la lista desordena dandole un espacio-seperior exterior de 4 
+                      pixeles*/
+    margin-left: -25px;/*A la lista desordenada la muevo un poquito mas a la izquierda */
+}
+.indice li {
+    display: inline-block;/*Cambio el display y a los items de lista los pongo en linea 
+                            (uno al lado del otro)*/
+    opacity: 0;/*Lo desaparesco a los items de la lista desordenada con opacity en cero*/
+    transition: all .3s ease;/*A todo le doy una transicion de 30 milisegundos*/
+    margin-left: -7.6px;/*hacerco un poco los items de la lista desordenada dandole un espacio
+                          -exterior izquierdo*/
+    padding: 0px 20px;
+}
+/*Cuando se pase el mouse por encima de un item de la lista este: */
+li:hover {
+    font-size: 25px;/*Va a cambiar el tamaño de la fuente a 25 pixeles*/
+    margin-top: -10px;/*y va a subir con un espacio-superior exterior negativo de 10 pixeles*/
+}
+a {
+    text-decoration: none;/*Le saco el subrayado a todos las palabras entrecerradas por un 
+                            elemento anchor o enlace*/
+    color: black;/*le cambio el color de la letras a negro*/
+}
+a:visited {
+    color: black;/*cuando un enlace haya sido vistado el color de la letra va a seguir 
+                    siendo negro*/
+}
+/*Cuando el input con id menu este checkeado el div con clase indice va a:*/
+#menu:checked ~ .indice {
+    width: 100%;/*cambiar su ancho a cien porciento*/
+    font-size: 21px;/*cambiar el tamaño de las letras a 21 pixeles(Los item de lista)*/
+    border-bottom: 2px solid black;/*y va a tener un borde inferior de 2pixeles , solido y 
+                                       negro*/
+}
+/*Cuando el input con id menu este checkeado los items list del div con clase indice van a:*/
+#menu:checked ~ .indice li{
+    opacity: 1;/*Aparecer con la opacidad en uno*/
+}
+div[class="logo"] {
+    top: 0;/*Posiono el div con clase logo que contiene el logo del nav al top y por encima de
+             este con top en cero*/
+    left: 47.2%;/*Lo posiciono al centro*/
+    position: absolute;/*Lo posiciono de forma precisa y por encima con position en absolute*/
+    z-index: 4;/*Lo pongo por encima de los demas elementos con z-index en 4*/
+}
+div[class="logo"] img{
+    width: 93px;/*Le doy 93 pixeles de ancho a la imagen de logo que esta dentro del div 
+                  con class logo*/
+    /* height: auto; */
+}
+
+/*mediante media queries cambio el alto del nav, el ancho del logo y el icono
+  de menu hamburguesa */
+@media (min-width: 1464px) {
+    #nav {
+        height: 71px;
+    }
+    div[class="logo"] img {
+        width: 107px;
+    }
+    img[class="menuHamburger"] {
+        width: 116px;
+    }
+    .indice {
+        margin-top: -2px;
+    }
+}
+@media (min-width: 1464px) and (min-width: 1647px) {
+    #nav {
+        height: 82px;
+    }
+    div[class="logo"] img {
+        width: 120px;
+    }
+    img[class="menuHamburger"] {
+        width: 129px;
+    }
+    .indice {
+        height: 40px;
+        margin-top: 2px;
+    }
+    .indice li {
+        transition: all .3s ease;
+    }
+    #menu:checked ~ .indice {
+        width: 100%;
+        font-size: 25px;
+    }
+    li:hover {
+        font-size: 28px;
+    }
+}
+@media (min-width: 1647px) and (min-width: 1757px){
+    #nav {
+        height: 83px;
+    }
+    div[class="logo"] img {
+        width: 125px;
+    }
+    img[class="menuHamburger"] {
+        width: 134px;
+    }
+    .indice {
+        height: 43px;
+        margin-top: -3px;
+    }
+    .indice li {
+        transition: all .3s ease;
+    }
+    #menu:checked ~ .indice {
+        width: 100%;
+        font-size: 26px;
+    }
+    .indice li {
+        margin-top: 4px;
+    }
+    li:hover {
+        margin-top: -12px;
+        font-size: 30px;
+    }
+}
+@media (min-width: 1757px) and (min-width: 1977px) {
+    #nav {
+        height: 93px;
+    }
+    div[class="logo"] img {
+        width: 139px;
+    }
+    img[class="menuHamburger"] {
+        width: 148px;
+    }
+    .indice {
+        height: 48px;
+        margin-top: 4px;
+    }
+    .indice li {
+        transition: all .3s ease;
+    }
+    #menu:checked ~ .indice {
+        width: 100%;
+        font-size: 30px;
+    }
+    .indice li {
+        margin-top: 4px;
+    }
+    li:hover {
+        margin-top: -12px;
+        font-size: 34px;
+    }
+}
+@media (min-width: 1977px) and (min-width: 2636px){
+    #nav {
+        height: 124px;
+    }
+    div[class="logo"] img {
+        width: 184px;
+    }
+    img[class="menuHamburger"] {
+        margin-top: 7px;
+        width: 193px;
+    }
+    .indice {
+        height: 66px;
+        margin-top: 4px;
+    }
+    .indice li {
+        transition: all .3s ease;
+    }
+    #menu:checked ~ .indice {
+        width: 100%;
+        font-size: 39px;
+    }
+    .indice li {
+        margin-top: 5px;
+    }
+    li:hover {
+        margin-top: -12px;
+        font-size: 43px;
+    }
+}
+@media (min-width: 2636px) and (min-width: 3954px){
+    #nav {
+        height: 189px;
+    }
+    div[class="logo"] img {
+        width: 280px;
+    }
+    img[class="menuHamburger"] {
+        margin-top: 10px;
+        width: 289px;
+    }
+    .indice {
+        height: 100px;
+        margin-top: 13px;
+    }
+    .indice li {
+        transition: all .3s ease;
+    }
+    #menu:checked ~ .indice {
+        width: 100%;
+        font-size: 57px;
+    }
+    .indice li {
+        margin-top: 10px;
+    }
+    li:hover {
+        margin-top: -12px;
+        font-size: 62px;
+    }
+}
+@media (min-width: 3954px) and (min-width: 5272px){
+    #nav {
+        height: 247px;
+    }
+    div[class="logo"] img {
+        width: 370px;
+    }
+    img[class="menuHamburger"] {
+        margin-top: 12px;
+        width: 379px;
+    }
+    .indice {
+        height: 152px;
+        margin-top: 18px;
+    }
+    .indice li {
+        transition: all .3s ease;
+    }
+    #menu:checked ~ .indice {
+        width: 100%;
+        font-size: 84px;
+    }
+    .indice li {
+        margin-top: 16px;
+        margin-left: 20px;
+    }
+    li:hover {
+        margin-top: -12px;
+        font-size: 95px;
+    }
+}
+@media (max-width: 950px) {
+    .indice li:last-child {
+        margin-left: 22.3%;
+    }
+}
+@media (max-width: 768px) {
+    .indice {
+        height: 0px;
+        position: absolute;
+        z-index: 4;
+        width: 100%;
+        border-bottom: 2px solid black;
+    }
+    .indice ul {
+        margin-top: 50px;
+    }
+    .indice li {
+        display: block;
+        text-align: center;
+        margin-bottom: 5px;
+        opacity: 0;
+        /* transition: opacity 3s ; */
+        /* transition: all .5s ease; */
+        transition: all .3s ease;
+        font-size: 0px;
+    }
+    .indice li:last-child {
+        margin-left: 0;
+    }
+    #menu:checked ~ .indice li {
+        font-size: 26px;  
+        transition: opacity 2.7s ease; 
+        opacity: 1; 
+    }
+    #menu:checked ~ .indice {
+        height: 190px;
+    }
+    li:hover {
+        margin-top: 0;
+    }
+    div[class="logo"] {
+        left: 46%;
+    }
+    div[class="logo"] img{
+        width: 62px;
+    }
+}
+
+@media (max-width: 425px) {
+    div[class="portada"] {
+        margin-top: 34px;
+    }
+    div[class="portada"]:first-child {
+        margin-top: 54px;
+    }
+    div[class="imgLogo"]:last-child {
+        margin-bottom: 34px;
+    }
+    #nav {
+        height: 52px;
+    }
+    img[class="menuHamburger"] {
+        width: 93px;
+        margin-top: 0px;
+    }
+    .indice {
+        margin-top: -5px;
+    }
+    div[class="logo"] {
+        left: 40.93%;
+    }
+}
+
+@media (max-width: 320px) {
+    div[class="portada"] {
+        margin-top: 34px;
+    }
+    div[class="portada"]:first-child {
+        margin-top: 54px;
+    }
+    div[class="imgLogo"]:last-child {
+        margin-bottom: 34px;
+    }
+    #nav {
+        height: 48px;
+    }
+    img[class="menuHamburger"] {
+        width: 89px;
+        margin-top: -1px;
+    }
+    .indice {
+        margin-top: -5px;
+    }
+    div[class="logo"] {
+        left: 40%;
+    }
+}
+/*********************************************************************************************/
+body {
+    background-image: url(../imgs/Background/Celeste.webp);/*Pongo una imagen de
+                                                          fondo del cielo azul*/
+    background-repeat: no-repeat;/*Le digo que la imagen de fondo no se repita*/
+    background-size: cover;/*y le digo que la imagen se redimensione para cubrir todo 
+                             el ancho y alto de la pantalla*/
+                             
+    margin: 0; /*Esto es para que la barra de navegacion ocupe todo el ancho y este en la 
+                 parte superior sin espacios*/
+}
+img[class="One"], img[class="Two"], img[class="Three"], img[class="Four"], img[class="Five"]{
+    width: 99%;/*Hago que todas las portadas ocupen el 99% de ancho de su contenedor div
+                 con clase portada*/
+
+    border: 2px solid black;/*Hago que todas las portadas(IMAGENES) tengan un borde
+                                de dos pixeles, solido y negro*/
+    border-radius: 20px; /*las puntas de las imagenes portada estaran redondiadas
+                           en un radio de 20px*/
+}
+div[class="portada"] img {
+    margin: 0 auto;/*Centro las imagenes del contendor de las portadas*/
+    
+    display: block;/*Le doy un display en block para que se comporte como
+                     un elemento de bloque*/
+}
+div[class="portada"]{
+    background-color: black;/*Al div con clase portada le doy un color de fondo negro*/
+
+    width: 80%; /*Le digo que el contendor de las imagenes de portada
+                  siempre ocupe un 80% de la pantalla*/
+    max-width: 840px; /*Y que su ancho maximo sea de 840px*/
+
+    border: 6px solid brown;/*a el contendor de las imagenes de portada le doy
+                                un borde de 6px solido de color marron*/
+    border-radius: 25px;/*Redondeo las puntas en un radio de 25px de cada div con class
+                          portada*/
+
+    margin: 0 auto;/*Centro los div contenedores de las imagenes portada*/
+    margin-top: 50px;/*Le digo que haya un espacio de 50px en la parte superior
+    de cada uno de los divs que contienen las portadas*/
+
+    overflow: hidden; /*Esto es para que no se desborde la imagen al agrandarse*/
+    
+    position: relative;/*utilizo la posicion relativa para que el div contenedor
+                         de las imagenes de portada se muevan en relacion a su 
+                         posicion original además para que no afecte al contenido
+                         */
+}
+div[class="portada"]:first-child {
+    margin-top: 82px;/*Le digo que el primer div con la clase "portada" tenga un 
+                       margen superior de 82 pixeles*/
+}
+img {
+    transition: transform .37s;/*Le doy a todas las imagenes una transicion de 37 milisegundos 
+                                al agrandrandarse*/
+}
+.portada:hover img {
+    transform: scale(1.121)/*Al pasar el mouse por el div con clase portada la imagen
+                             de su respectivo div se va a agrandar un poco mas de un 12%*/
+}
+section[class="parrafo1"], section[class="parrafo2"], section[class="parrafo3"], section[class="parrafo4"], section[class="parrafo5"] {
+    background-color: rgba(0, 0, 0, 0.52);/*A todos las secciones le doy un
+                                              color de fondo negro semitransparente*/
+
+    color: whitesmoke;/*Les pongo el color de las letras en "blanco humo"*/
+    font-size: 29px;/*Determino el tamaño de la fuente de las letras en 29px*/
+
+    position: absolute;/*Posicion absoluta para se posicione de forma precisa y 
+                         ademas para que este por encima de la imagen del div*/
+
+    height: auto;/*El alto de cada section adapta proporcionalmente dependiendo 
+                   del ancho*/
+    width: 96%; /*Le decimos que ocupe el 96% del div con clase portada que lo contiene */
+
+    bottom: 0px;/*Los ponemos al tope de la parte inferior*/
+
+    padding-top: 50%;/*Agrandamos un 50% el espacio interior-superior de todos 
+                       los sections para que el color semi-transparente negro ocupe todo
+                       el alto tapando la portada*/
+    padding-bottom: 10px;/*Subimos un poco el texto que contienen los sections
+                           poniendole un espacio interior inferior de 10 pixeles*/
+    padding-left: 10px;/*acomodo el texto dandole un espacio interior izquierdo
+                         de 10 pixeles*/
+    padding-right: 30px;/*acomodo el texto dandole un espacio interior derecho
+                          de 30 pixeles*/
+}
+
+/*a todas las secciones que contienen texto las desaparesco con opacity en cero y le doy una
+  transicion de opacidad de 1.2 segundos*/
+.parrafo1, .parrafo2, .parrafo3, .parrafo4, .parrafo5{
+    opacity: 0;
+    transition: opacity 1.2s;
+}
+/***********************************************************************************************************************/
+
+/*Aca le digo que cuando se pase el mouse por encima del div con clase portada 
+  el texto del section correspondiente vuelve aparecer*/
+.portada:hover .parrafo1 {
+    opacity: 1;
+}
+.portada:hover .parrafo2 {
+    opacity: 1;
+}
+.portada:hover .parrafo3 {
+    opacity: 1;
+}
+.portada:hover .parrafo4 {
+    opacity: 1;
+}
+.portada:hover .parrafo5 {
+    opacity: 1;
+}
+
+/*XXXXXXXX Modelado de logos XXXXXXXX*/
+
+div[class="imgLogo"] {
+    position: relative;/*utilizo la posicion relativa para que el div contenedor
+                         de las imagenes de portada se muevan en relacion a su
+                         posicion original además para que no afecte al contenido*/
+
+    width: 80%;/*Le doy el mismo ancho que el div de class "portada"*/
+    max-width: 840px;/*Y tambien el mismo ancho-maximo para que respete las 
+                       proporciones*/
+    margin: 0 auto;/*Lo centro*/
+
+    text-align: right; /*a las imagenes de logos las aliño a la derecha*/
+}
+
+img[class="imgOne"] {
+    height: auto;/*El alto de cada logo se adapta proporcionalmente dependiendo 
+                   del ancho*/
+    width: 10.3%;/*Le digo que su ancho sea siempre un 10.3% de su contenedor
+                   (div[class="imgLogo"])*/
+    position: absolute;/* Posiciono el logo de manera absoluta para que este 
+                          se posicione de manera precisa y por encima del div*/
+    margin-top: -50%;/*Lo posiciono en el medio del borde derecho del div clase
+                       portada*/
+    margin-left: -3%;/*Lo posiciono por encima del borde derecho del div con class portada*/
+}
+img[class="imgTwo"] {
+    height: auto;/*El alto del logo se adapta proporcionalmente dependiendo 
+                   del ancho*/
+    width: 12%;/*Le digo que su ancho sea siempre un 12% de su contenedor(div[class="imgLogo"])
+    */
+    position: absolute;/* Posiciono el logo de manera absoluta para que este 
+                          se posicione de manera precisa y por encima de su div class portada
+                          */
+    margin-top: -51%;/*Lo posiciono en el medio del borde derecho del div clase
+                       portada*/
+    margin-left: -1.5%;/*Lo posiciono por encima del borde derecho del div
+                         class portada*/
+}
+img[class="imgThree"] {
+    height: auto;/*El alto del logo se adapta proporcionalmente dependiendo 
+                   del ancho*/
+    width: 19.3%;/*Le digo que su ancho sea siempre un 19.3% de su 
+                   contenedor(div[class="imgLogo"])*/
+    position: absolute;/* Posiciono el logo de manera absoluta para que este 
+                          se posicione de manera precisa y por encima del div .portada*/
+    margin-top: -48%;/*Lo posiciono en el medio del borde derecho del div clase
+                       portada*/
+    margin-left: -5.5%;/*Lo posiciono por encima del borde derecho del div 
+                         class portada*/
+}
+
+/*Cuando pase encima del respectivo div[class="portada"] la imagen de logo se va a ver semi
+  transparente por unos segundos*/
+.portada:hover + div[class="imgLogo"] img[class="imgThree"] {
+    animation-name: fade; /*le doy el nombre fade a la animacion*/
+    animation-duration: 3.7s; /* le doy 3.7 segundos de duración de la animacion */
+  }
+/*Mediante Kayframes creo mi animacion*/
+@keyframes fade {
+    from { opacity: 0.4; } /*Esto hara que la imagen se vuelva semitransparente cuando se pase
+                             el mouse por el respectivo div con clase portada*/
+    to { opacity: 1; }/*Al pasar los 3.7 segundos la imagen volvera a su opacidad original*/
+  }
+
+img[class="imgFour"] {
+    height: auto;/*El alto del logo adapta proporcionalmente dependiendo
+                   del ancho*/
+    width: 16.3%;/*Le digo que su ancho sea siempre un 16.3% de su 
+                   contenedor(div[class="imgLogo"])*/
+    position: absolute;/* Posiciono el logo de manera absoluta para que este  
+                          se posicione de manera precisa y por encima del div class portada*/
+    margin-top: -52%;/*Lo posiciono en el medio del borde derecho del div clase
+                       portada*/
+    margin-left: -6%;/*Lo posiciono por encima del borde derecho del div con clase portada*/
+}
+img[class="imgFive"] {
+    height: auto;/*El alto de cada logo adapta proporcionalmente dependiendo
+                   del ancho*/
+    width: 19.5%;/*Le digo que su ancho sea siempre un 19.5% del div que lo contiene 
+                   div[imgLogo]*/
+    position: absolute;/* Posiciono el logo de manera absoluta para que este 
+                          se posicione de manera precisa y por encima del div class portada*/
+    margin-top: -50.4%;/*Lo posiciono en el medio del borde derecho del div clase
+                         portada*/
+    margin-left: -7%;/*Lo posiciono por encima del borde derecho del div class portada*/
+}
+
+/*Al pasar el mouse por encima del div con class imgLogo la imagen de logo
+  correspondiente a su portada se agranda*/
+.portada:hover + div[class="imgLogo"] img[class="imgOne"] {
+    transform: scale(1.2);
+}
+.portada:hover + div[class="imgLogo"] img[class="imgTwo"] {
+    transform: scale(1.2);
+}
+.portada:hover + div[class="imgLogo"] img[class="imgThree"] {
+    transform: scale(1.2)
+}
+.portada:hover + div[class="imgLogo"] img[class="imgFour"] {
+    transform: scale(1.2)
+}
+.portada:hover + div[class="imgLogo"] img[class="imgFive"] {
+    transform: scale(1.2)
+}
+
+/*Al ultimo div contenedor del ultimo logo el doy un espacio inferior de 40 pixeles*/
+div[class="imgLogo"]:last-child {
+    margin-bottom: 40px;
+}
+
+/**********************************************************************************************************************/
+
+/*Cambiando distintas propiedades para que el contenido se adapte a pantallas
+  grandes*/
+/*Apartir de las pantallas con un 1464 pixeles: */
+  @media (min-width: 1464px) {
+    div[class="portada"] {
+        max-width: 930px; /*El ancho maximo de los div con clase portada va a ser 930 pixeles
+                            */
+        border: 7px solid brown; /*El borde del div class portada va agrandarse un pixel*/
+    }
+    div[class="portada"]:first-child {
+        margin-top: 102px;/*El primer div con class portada va a tener 102px de espacio
+                            superior-exterior*/
+    }
+    section[class="parrafo1"], section[class="parrafo2"], section[class="parrafo3"], section[class="parrafo4"], section[class="parrafo5"] {
+        padding-right: 50px;/*Todos los section va a tener 50px de espacio derecho interior*/
+        font-size: 37px;/*La fuente letra de los sections va a ser de 37 pixeles*/
+    }
+    img[class="One"] {
+        border: 3px solid black; /*El borde de las imagen con clase One va a tener un pixel
+                                     mas en el borde*/
+    }
+    div[class="imgLogo"] {
+        max-width: 930px;/*Los */
+    }
+    div[class="imgLogo"]:last-child {
+        margin-bottom: 70px;
+    }
+}
+@media (min-width: 1464px) and (min-width: 1517px) {
+    div[class="portada"] {
+        max-width: 930px;
+        border: 7px solid brown;
+    }
+    section[class="parrafo1"], section[class="parrafo2"], section[class="parrafo3"], section[class="parrafo4"], section[class="parrafo5"] {
+        padding-right: 50px;
+        font-size: 37px;
+    }
+    img[class="One"] {
+        border: 3px solid black;
+    }
+    div[class="imgLogo"] {
+        max-width: 930px;
+    }
+    div[class="imgLogo"]:last-child {
+        margin-bottom: 80px;
+    }
+}
+@media (min-width: 1517px) and (min-width: 1647px) {
+    div[class="portada"] {
+        max-width: 1000px;
+        border: 8px solid brown;
+        border-radius: 30px;
+        margin-top: 73px;
+    }
+    div[class="portada"]:first-child {
+        margin-top: 120px;
+    }
+    div[class="portada"] img {
+        transform: scale(.998);
+    }
+    div[class="portada"] img:first-child {
+        border-top: 2px solid black;
+        border-bottom: 3px solid black;
+    }
+    section[class="parrafo1"], section[class="parrafo2"], section[class="parrafo3"], section[class="parrafo4"], section[class="parrafo5"] {
+        padding-right: 50px;
+        font-size: 37px;
+    }
+    img[class="One"] {
+        border: 4px solid black;
+        border-radius: 30px;
+    }
+    div[class="imgLogo"] {
+        max-width: 1000px;
+    }
+    div[class="imgLogo"]:last-child {
+        margin-bottom: 84px;
+    }
+}
+@media (min-width: 1517px) and (min-width: 1707px){
+    div[class="portada"] {
+        max-width: 1100px; 
+        border: 8px solid brown;
+        border-radius: 34px;
+        margin-top: 84px;
+    }
+    div[class="portada"]:first-child {
+        margin-top: 125px;
+    }
+    div[class="portada"] img {
+        border-radius: 34px;
+    }
+    div[class="portada"] img:first-child {
+        border-top: 2.5px solid black;
+        border-bottom: 1px solid black;
+    }
+    section[class="parrafo1"], section[class="parrafo2"], section[class="parrafo3"], section[class="parrafo4"], section[class="parrafo5"] {
+        padding-right: 50px;
+        font-size: 39px;
+    }
+    img[class="One"] {
+        border: 3px solid black;
+    }
+    div[class="imgLogo"] {
+        max-width: 1100px;
+    }
+    div[class="imgLogo"]:last-child {
+        margin-bottom: 102px;
+    }
+}
+@media (min-width: 1517px) and (min-width: 1977px){
+    div[class="portada"] {
+        max-width: 1200px; 
+        border: 9px solid brown;
+        border-radius: 37px;
+        margin-top: 93px;
+    }
+    div[class="portada"]:first-child {
+        margin-top: 131px;
+    }
+    section[class="parrafo1"], section[class="parrafo2"], section[class="parrafo3"], section[class="parrafo4"], section[class="parrafo5"] {
+        padding-right: 50px;
+        font-size: 52px;
+    }
+    img[class="One"] {
+        border: 4px solid black;
+        border-radius: 37px;
+    }
+    div[class="imgLogo"] {
+        max-width: 1200px;
+    }
+    div[class="imgLogo"]:last-child {
+        margin-bottom: 152px;
+    }
+}
+@media (min-width: 1517px) and (min-width: 2636px) {
+    div[class="portada"] {
+        max-width: 1500px; 
+        border: 12px solid brown;
+        border-radius: 43px;
+        margin-top: 125px;
+    }
+    div[class="portada"]:first-child {
+        margin-top: 180px;
+    }
+    div[class="portada"] img {
+        border-radius: 34px;
+    }
+    div[class="portada"] img:first-child {
+        border-top: 2.5px solid black;
+        border-bottom: 4px solid black;
+    }
+    section[class="parrafo1"], section[class="parrafo2"], section[class="parrafo3"], section[class="parrafo4"], section[class="parrafo5"] {
+        padding-right: 50px;
+        font-size: 66px;
+    }
+    img[class="One"] {
+        border: 7px solid black;
+        border-radius: 43px;
+    }
+    div[class="imgLogo"] {
+        max-width: 1500px;
+    }
+    div[class="imgLogo"]:last-child {
+        margin-bottom: 173px;
+    }
+}
+@media (min-width: 1517px) and (min-width: 3954px){
+    div[class="portada"] {
+        max-width: 2330px; 
+        border: 18px solid brown;
+        border-radius: 66px;
+        margin-top: 173px;
+    }
+    div[class="portada"]:first-child {
+        margin-top: 232px;
+    }
+    section[class="parrafo1"], section[class="parrafo2"], section[class="parrafo3"], section[class="parrafo4"], section[class="parrafo5"] {
+        padding-right: 100px;
+        font-size: 93px;
+    }
+    img[class="One"] {
+        border: 10px solid black;
+        border-radius: 50px;
+    }
+    div[class="imgLogo"] {
+        max-width: 2330px;
+    }
+    div[class="imgLogo"]:last-child {
+        margin-bottom: 243px;
+    }
+}
+@media (min-width: 1517px) and (min-width: 5272px){
+    div[class="portada"] {
+        max-width: 3040px; 
+        border: 26px solid brown;
+        border-radius: 93px;
+        margin-top: 210px;
+    }
+    div[class="portada"]:first-child {
+        margin-top: 373px;
+    }
+    div[class="portada"] img {
+        transform: scale(.996);
+        border-left: 0px solid black;
+        border-right: 0px solid black;
+    }
+    section[class="parrafo1"], section[class="parrafo2"], section[class="parrafo3"], section[class="parrafo4"], section[class="parrafo5"] {
+        padding-right: 100px;
+        font-size: 134px;
+    }
+    img[class="One"] {
+        border: 10px solid black;
+        border-radius: 97px;
+    }
+    div[class="imgLogo"] {
+        max-width: 3040px;
+    }
+    div[class="imgLogo"]:last-child {
+        margin-bottom: 343px;
+    }
+}
+
+/*******************************************************************************************************/
+
+/*Cambiando el tamaño de la fuente de la letra del parrafo1 de la primer portada para que se adapte a distintas pantallas*/
+
+@media (max-width: 732px) {
+    section[class="parrafo1"]  {
+        font-size: 27px;
+    }
+}
+
+@media (max-width: 681px) {
+    section[class="parrafo1"] {
+        font-size: 26px;
+    }
+}
+
+@media (max-width: 661px) {
+    section[class="parrafo1"] {
+        font-size: 25px;
+    }
+}
+@media (max-width: 617px) {
+    section[class="parrafo1"]  {
+        font-size: 24px;
+    }
+}
+@media (max-width: 602px) {
+    section[class="parrafo1"] {
+        font-size: 24px;
+    }
+}
+@media (max-width: 595px) {
+    section[class="parrafo1"] {
+        font-size: 23px;
+    }
+}
+@media (max-width: 585px) {
+    section[class="parrafo1"] {
+        font-size: 22px;
+    }
+}
+@media (max-width: 577px) {
+    section[class="parrafo1"] {
+        font-size: 22px;
+    }
+}
+@media (max-width: 565px) {
+    section[class="parrafo1"]{
+        font-size: 20.5px;
+    }
+}
+@media (max-width: 550px) {
+    section[class="parrafo1"] {
+        font-size: 20px;
+    }
+}
+@media (max-width: 515px) {
+    section[class="parrafo1"] {
+        font-size: 19px;
+    }
+}
+@media (max-width: 500px) {
+    section[class="parrafo1"] {
+        font-size: 18px;
+    }
+}
+@media (max-width: 452px) {
+    section[class="parrafo1"] {
+        font-size: 16px;
+    }
+}
+@media (max-width: 403px) {
+    section[class="parrafo1"] {
+        font-size: 15px;
+    }
+}
+@media (max-width: 380px) {
+    section[class="parrafo1"] {
+        font-size: 14px;
+    }
+}
+@media (max-width: 355px) {
+    section[class="parrafo1"] {
+        font-size: 14px;
+        padding-bottom: 7px;
+    }
+}
+@media (max-width: 354px) {
+    section[class="parrafo1"] {
+        font-size: 13.01px;
+    }
+}
+@media (max-width: 331px) {
+    section[class="parrafo1"]{
+        font-size: 12px;
+    }
+}
+
+/*************************************************************************************/
+
+/*Cambiando el tamaño de la fuente de la letra del parrafo2 de la segunda portada para que se adapte a distintas pantallas*/
+
+@media (max-width: 713px) {
+    section[class="parrafo2"]{
+        font-size: 27px;
+    }
+}
+@media (max-width: 677px) {
+    section[class="parrafo2"]{
+        font-size: 26px;
+    }
+}
+@media (max-width: 655px) {
+    section[class="parrafo2"]{
+        font-size: 25px;
+    }
+}
+@media (max-width: 621px) {
+    section[class="parrafo2"]{
+        font-size: 24px;
+    }
+}
+@media (max-width: 603px) {
+    section[class="parrafo2"]{
+        font-size: 23px;
+    }
+}
+@media (max-width: 577px) {
+    section[class="parrafo2"]{
+        font-size: 22px;
+    }
+}
+@media (max-width: 561px) {
+    section[class="parrafo2"]{
+        font-size: 21px;
+    }
+}
+@media (max-width: 537px) {
+    section[class="parrafo2"]{
+        font-size: 20px;
+    }
+}
+@media (max-width: 513px) {
+    section[class="parrafo2"]{
+        font-size: 19px;
+    }
+}
+@media (max-width: 472px) {
+    section[class="parrafo2"]{
+        font-size: 18px;
+    }
+}
+@media (max-width: 448px) {
+    section[class="parrafo2"]{
+        font-size: 17px;
+    }
+}
+@media (max-width: 424px) {
+    section[class="parrafo2"]{
+        font-size: 16px;
+    }
+}
+@media (max-width: 401px) {
+    section[class="parrafo2"]{
+        font-size: 15px;
+    }
+}
+@media (max-width: 376px) {
+    section[class="parrafo2"]{
+        font-size: 14px;
+    }
+}
+@media (max-width: 352px) {
+    section[class="parrafo2"]{
+        font-size: 13px;
+    }
+}
+@media (max-width: 340px) {
+    section[class="parrafo2"]{
+        font-size: 12px;
+    }
+}
+@media (max-width: 323px) {
+    section[class="parrafo2"]{
+        font-size: 11.8px;
+    }
+}
+/*************************************************************************************/
+
+/*Cambiando el tamaño de la fuente de la letra del parrafo3 de la tercer portada para que se adapte a distintas pantallas*/
+
+@media (max-width: 730px) {
+    section[class="parrafo3"] {
+        font-size: 27px;
+    }
+}
+@media (max-width: 690px) {
+    section[class="parrafo3"] {
+        font-size: 26px;
+    }
+}
+@media (max-width: 665px) {
+    section[class="parrafo3"] {
+        font-size: 25px;
+    }
+}
+@media (max-width: 627px) {
+    section[class="parrafo3"] {
+        font-size: 24px;
+    }
+}
+@media (max-width: 606px) {
+    section[class="parrafo3"] {
+        font-size: 23px;
+    }
+}
+@media (max-width: 587px) {
+    section[class="parrafo3"] {
+        font-size: 21px;
+    }
+}
+@media (max-width: 572px) {
+    section[class="parrafo3"] {
+        font-size: 20.5px;
+    }
+}
+@media (max-width: 537px) {
+    section[class="parrafo3"] {
+        font-size: 20px;
+    }
+}
+@media (max-width: 534px) {
+    section[class="parrafo3"] {
+        font-size: 19px;
+    }
+}
+@media (max-width: 514px) {
+    section[class="parrafo3"] {
+        font-size: 18px;
+    }
+}
+@media (max-width: 475px) {
+    section[class="parrafo3"] {
+        font-size: 17px;
+    }
+}
+@media (max-width: 458px) {
+    section[class="parrafo3"] {
+        font-size: 16.71px;
+    }
+}
+@media (max-width: 457px) {
+    section[class="parrafo3"] {
+        font-size: 16px;
+    }
+}
+@media (max-width: 424px) {
+    section[class="parrafo3"] {
+        font-size: 15.39px;
+    }
+}
+@media (max-width: 416px) {
+    section[class="parrafo3"] {
+        font-size: 15px;
+    }
+}
+@media (max-width: 398px) {
+    section[class="parrafo3"] {
+        font-size: 14px;
+    }
+}
+@media (max-width: 378px) {
+    section[class="parrafo3"] {
+        font-size: 13.4px;
+    }
+}
+@media (max-width: 370px) {
+    section[class="parrafo3"] {
+        font-size: 13px;
+    }
+}
+@media (max-width: 359px) {
+    section[class="parrafo3"] {
+        font-size: 12px;
+    }
+}
+@media (max-width: 333px) {
+    section[class="parrafo3"] {
+        font-size: 11.8px;
+    }
+}
+@media (max-width: 327px) {
+    section[class="parrafo3"] {
+        font-size: 11.75px;
+    }
+}
+/*************************************************************************************/
+
+/*Cambiando el tamaño de la fuente de la letra del parrafo4 de la cuarta portada para que se adapte a distintas pantallas*/
+
+@media (max-width: 764px){
+    section[class="parrafo4"]{
+        font-size: 27px;
+    }
+}
+@media (max-width: 713px){
+    section[class="parrafo4"]{
+        font-size: 26px;
+    }
+}
+@media (max-width: 688px){
+    section[class="parrafo4"]{
+        font-size: 25px;
+    }
+}
+@media (max-width: 663px){
+    section[class="parrafo4"]{
+        font-size: 24px;
+    }
+}
+@media (max-width: 638px){
+    section[class="parrafo4"]{
+        font-size: 23px;
+    }
+}
+@media (max-width: 613px){
+    section[class="parrafo4"]{
+        font-size: 22px;
+    }
+}
+@media (max-width: 587px){
+    section[class="parrafo4"]{
+        font-size: 21px;
+    }
+}
+@media (max-width: 575px){
+    section[class="parrafo4"]{
+        font-size: 20.7px;
+    }
+}
+@media (max-width: 555px){
+    section[class="parrafo4"]{
+        font-size: 20px;
+    }
+} 
+@media (max-width: 537px){
+    section[class="parrafo4"]{
+        font-size: 19px;
+    }
+}
+@media (max-width: 514px){
+    section[class="parrafo4"]{
+        font-size: 18px;
+    }
+}
+@media (max-width: 475px){
+    section[class="parrafo4"]{
+        font-size: 17px;
+    }
+}
+@media (max-width: 456px){
+    section[class="parrafo4"]{
+        font-size: 16px;
+    }
+}
+@media (max-width: 424px){
+    section[class="parrafo4"]{
+        font-size: 15px;
+    }
+}
+@media (max-width: 398px){
+    section[class="parrafo4"]{
+        font-size: 14px;
+    }
+}
+@media (max-width: 378px){
+    section[class="parrafo4"]{
+        font-size: 13px;
+    }
+}
+@media (max-width: 352px){
+    section[class="parrafo4"]{
+        font-size: 12.3px;
+    }
+}
+@media (max-width: 334px){
+    section[class="parrafo4"]{
+        font-size: 12px;
+    }
+}
+@media (max-width: 327px){
+    section[class="parrafo4"]{
+        font-size: 11.75px;
+    }
+}
+/**************************************************************************************************/
+
+/*Cambiando el tamaño de la fuente de la letra del parrafo5 de la quinta portada para que se adapte a distintas pantallas*/
+@media  (max-width: 790px) {
+    section[class="parrafo5"] {
+        font-size: 27px;
+    }
+}
+@media  (max-width: 744px) {
+    section[class="parrafo5"] {
+        font-size: 26px;
+    }
+}
+@media  (max-width: 716px) {
+    section[class="parrafo5"] {
+        font-size: 24px;
+    }
+}
+@media  (max-width: 702px) {
+    section[class="parrafo5"] {
+        font-size: 25px;
+    }
+}
+@media  (max-width: 690px) {
+    section[class="parrafo5"] {
+        font-size: 24px;
+    }
+}
+@media  (max-width: 663px) {
+    section[class="parrafo5"] {
+        font-size: 23px;
+    }
+}
+@media  (max-width: 637px) {
+    section[class="parrafo5"] {
+        font-size: 22px;
+    }
+}
+@media  (max-width: 612px) {
+    section[class="parrafo5"] {
+        font-size: 21px;
+    }
+}
+@media  (max-width: 590px) {
+    section[class="parrafo5"] {
+        font-size: 20px;
+    }
+}
+@media  (max-width: 558px) {
+    section[class="parrafo5"] {
+        font-size: 19px;
+    }
+}
+@media  (max-width: 530px) {
+    section[class="parrafo5"] {
+        font-size: 19px;
+    }
+}
+@media  (max-width: 553px) {
+    section[class="parrafo5"] {
+        font-size: 18px;
+    }
+}
+@media  (max-width: 505px) {
+    section[class="parrafo5"] {
+        font-size: 17px;
+    }
+}
+@media  (max-width: 464px) {
+    section[class="parrafo5"] {
+        font-size: 16px;
+    }
+}
+@media  (max-width: 438px) {
+    section[class="parrafo5"] {
+        font-size: 15px;
+    }
+}
+@media  (max-width: 411px) {
+    section[class="parrafo5"] {
+        font-size: 14px;
+    }
+}
+@media  (max-width: 385px) {
+    section[class="parrafo5"] {
+        font-size: 13px;
+    }
+}
+@media  (max-width: 366px) {
+    section[class="parrafo5"] {
+        font-size: 12px;
+    }
+}
+@media  (max-width: 352px) {
+    section[class="parrafo5"] {
+        font-size: 11.7px;
+    }
+}
+@media  (max-width: 324px) {
+    section[class="parrafo5"] {
+        font-size: 11.52px;
+    }
+}
+/**************************************************************************************************/
+
+
+/***
+Adapto los div con class portada y logos cambiando ancho para que el logo no se desborde al agrandarse y reposicionandolo cambiando el margin para que quede en el medio y sobre el borde de su respectivo div
+***/
+@media (max-width: 1120px) {
+    div[class="portada"] {
+        width: 77.3%;
+    }
+    img[class="imgOne"] {
+        margin-left: -4.4%;
+        margin-top: -50%;
+    }
+    img[class="imgTwo"] {
+        margin-left: -3.4%;
+        margin-top: -51%;
+    }
+    img[class="imgThree"] {
+        margin-left: -8%;
+        margin-top: -48%;
+    }
+    img[class="imgFour"] {
+        margin-left: -8%;
+        margin-top: -50.5%;
+    }
+    img[class="imgFive"] {
+        margin-left: -9%;
+        margin-top: -49.4%;
+    }
+}
+@media (max-width: 1079px) {
+    img[class="imgThree"] {
+        width: 18.4%;
+        margin-top: -46.6%;
+    }
+}
+
+/************MODELADO PAGINA DOS[Sagas]************/
+
+body[class="Sagas"] {
+    background-image: none;/*Quito la imagen de fondo de mi body con clase Sagas
+    */
+    background-color: rgb(17, 16, 16);/*Al mismo le doy color de fondo gris
+                                          oscuro*/
+}
+div[class="SagasOne"] {
+    margin: 0 auto;/*centro el div con clase SagasOne*/
+    margin-top: 2%;/*Le doy un espacio exterior-superior de 2 porciento*/
+    text-align: center;/*centro la imagen dentro del div*/
+    width: 35%;/*le digo que ocupe un ancho 35% de su contenedor*/
+    min-width: 270px;/*le doy un ancho minimo de 270 pixeles*/
+}
+div[class="SagasTwo"] {
+    margin: 0 auto;/*centro el div con clase SagasTwo*/
+    margin-top: 2%;/*Le doy un espacio exterior-superior de 2 porciento*/
+    text-align: center;/*centro la imagen dentro del div*/
+    width: 33.4%;/*le digo que ocupe un ancho 33.4% de su contenedor*/
+    min-width: 270px;/*le doy un ancho minimo de 270 pixeles*/
+}
+div[class="SagasThree"] {
+    margin: 0 auto;/*centro el div con clase SagasThree*/
+    margin-top: 2%;/*Le doy un espacio exterior-superior de 2 porciento*/
+    text-align: center;/*centro la imagen dentro del div*/
+    width: 33.4%;/*le digo que ocupe un ancho 33.4% de su contenedor*/
+    min-width: 270px;/*le doy un ancho minimo de 270 pixeles*/
+}
+div[class="SagasFour"] {
+    margin: 0 auto;/*centro el div con clase SagasFour*/
+    margin-top: 2%;/*Le doy un espacio exterior-superior de 2 porciento*/
+    text-align: center;/*centro la imagen dentro del div*/
+    width: 35%;/*le digo que ocupe un ancho 35% de su contenedor*/
+    min-width: 270px;/*le doy un ancho minimo de 270 pixeles*/
+}
+div[class="SagasFive"] {
+    margin: 0 auto;/*centro el div con clase SagasFive*/
+    margin-top: 2%;/*Le doy un espacio exterior-superior de 2 porciento*/
+    text-align: center;/*centro la imagen dentro del div*/
+    width: 30%; /*le digo que ocupe un ancho 30% de su contenedor*/
+    min-width: 270px;/*le doy un ancho minimo de 270 pixeles*/
+}
+hr {
+    width: 44%;
+    height: 1px;/*le doy un alto de 1 pixel*/
+    background-color: gray;/*un color de fondo gris*/
+    border-radius: 5px;/*redondeo las puntas en un radio de 5 pixeles*/
+    transition: width 1s ease;/*Le doy una transicion del ancho suave*/
+}
+div img[class="logo"] {
+    width: 100%;/*Le digo que la imagen con clase logo ocupe el 100% de su 
+                  respectivo div contenedor*/
+}
+section[class="logoOne"] {
+    position: relative;/**/
+    width: 84%;/*le doy un ancho 84 porciento*/
+    margin: 0 auto;/*Lo centro*/
+    cursor: pointer;/*al pasar el mouse por encima el cursor cambia a la "manito"
+    */
+    transition: width 1s ease;/*Le doy un transicion de ancho de 1 segundo suave
+    */
+}
+section[class="logoTwo"] {
+    position: relative;
+    width: 86%;/*le doy un ancho 86 porciento*/
+    margin: 0 auto;
+    cursor: pointer;
+    transition: width 1s ease;
+}
+section[class="logoThree"] {
+    /* overflow: hidden; */
+    position: relative;
+    width: 80%;
+    margin: 0 auto;
+    margin-top: -5%;
+    /* border: 2px solid white; */
+    cursor: pointer;
+    transition: width 1s ease;
+}
+section[class="logoFour"] {
+    /* overflow: hidden; */
+    position: relative;
+    width: 84%;
+    margin: 0 auto;
+    margin-top: -5%;
+    /* border: 2px solid white; */
+    cursor: pointer;
+    transition: width 1s ease;
+}
+section[class="logoFive"] {
+    /* overflow: hidden; */
+    position: relative;
+    width: 90%;
+    margin: 0 auto;
+    margin-top: -5%;
+    /* border: 2px solid white; */
+    cursor: pointer;
+    transition: width 1s ease;
+}
+/***
+************************************************************************************/
+
+div img[class="portadaOne"] {
+    border-radius: 25px;/*redondeo las puntas de la imagen con clase portadaOne
+                          dentro del div*/
+    opacity: 0;
+    width: 0%;
+    transition: all 1.2s ease-in-out;
+    box-shadow: 0px 0px 12px white;
+    cursor: pointer;
+}
+div:hover .portadaOne{
+    opacity: 1;
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: -11%;
+}
+div img[class="portadaTwo"] {
+    border-radius: 25px;
+    z-index: 2;
+    opacity: 0;
+    width: 0%;
+    transition: all 1.2s ease-in-out;
+    box-shadow: 0px 0px 12px gold;
+    cursor: pointer;
+}
+div:hover .portadaTwo{
+    opacity: 1;
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: -11%;
+}
+div img[class="portadaThree"] {
+    border-radius: 25px;
+    z-index: 2;
+    opacity: 0;
+    width: 0%;
+    transition: all 1.2s ease-in-out;
+    box-shadow: 0px 0px 12px greenyellow;
+    cursor: pointer;
+}
+div:hover .portadaThree{
+    opacity: 1;
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: -11%;
+}
+div img[class="portadaFour"] {
+    border-radius: 25px;
+    z-index: 2;
+    opacity: 0;
+    width: 0%;
+    transition: all 1.2s ease-in-out;
+    box-shadow: 0px 0px 25px #804000;
+    cursor: pointer;
+}
+div:hover .portadaFour{
+    opacity: 1;
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: -11%;
+}
+div img[class="portadaFive"] {
+    border-radius: 25px;
+    z-index: 2;
+    opacity: 0;
+    width: 0%;
+    transition: all 1.2s ease-in-out;
+    box-shadow: 0px 0px 25px violet;
+    cursor: pointer;
+}
+div:hover .portadaFive{
+    opacity: 1;
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: -11%;
+}
+/******************************************************************************************************************/ 
+div[class="contenedorOne"] , div[class="contenedorTwo"], div[class="contenedorThree"], div[class="contenedorFour"], div[class="contenedorFive"] {
+    height: 0px;
+    width: 71%;
+    transition: all 1.2s ease-out;
+    /* background-color: white; */
+    /* position: absolute; */
+    z-index: 1000;
+    margin: 0 auto;
+    /* background-color: white;     */
+    
+    /* min-width: 430px; */
+  }
+  
+div[class="contenedorOne"] section[class="dragonBall"], div[class="contenedorTwo"] section[class="SagaSix"], div[class="contenedorThree"] section[class="SagaSix"], div[class="contenedorFour"] section[class="SagaSix"], div[class="contenedorFive"] section[class="SagaSix"] {
+    margin: 0 auto;/*Centros los div con clase saga que estan dentro de mi seccion
+                     contenedor los cuales van a tener las portadas*/
+    height: 10%;/*Le doy un ancho del 30%*/
+    border-radius: 25px;/*Le doy un radio al borde de 25px para que las esquinas
+                          no queden puntiaguadas*/
+    /*Le doy un borde solido de 2 pixeles de color
+      marron*/
+    /*Al div le defino un color de fondo negro*/
+    overflow: hidden;
+    /* margin-top: 2%; */
+    margin-bottom: 1%;
+    position: relative;
+    /* opacity: 0;
+    transition: all 1s; */
+    border: none;
+    margin-top: 10px;
+    transition: all .9s ease;
+    cursor: pointer;
+
+    /* border: 2px solid white; */
+
+    /* height: 0; */
+    background-color: black;
+    transition: padding .1s;
+    transition: box-shadow 1s ease;
+  }
+
+
+
+
+
+input[id="checkOne"]:checked ~  div[class="contenedorOne"] section[class="dragonBall"] {
+    padding: 20px;
+}
+input[id="checkTwo"]:checked ~  div[class="contenedorTwo"] section[class="SagaSix"] {
+    padding: 20px;
+}
+input[id="checkThree"]:checked ~  div[class="contenedorThree"] section[class="SagaSix"] {
+    padding: 20px;
+}
+input[id="checkFour"]:checked ~  div[class="contenedorFour"] section[class="SagaSix"] {
+    padding: 20px;
+}
+input[id="checkFive"]:checked ~  div[class="contenedorFive"] section[class="SagaSix"] {
+    padding: 20px;
+}
+
+
+
+
+.SagaSix:hover {
+    box-shadow: 0 0 12px gold;
+}
+section[class="dragonBall"]:hover {
+    box-shadow: 0 0 12px white;
+}
+section[class="dragonBall"] h3, .SagaSix h3 {
+    margin-top: -2px;
+    font-size: 21px;
+}
+section[class="SagaSix"] p, section[class="dragonBall"] p {
+    margin-top: 43px;
+    font-size: 22px;
+    /* display: none; */
+    font-family: cursive;/*Cambio el tipo de fuente*/
+}
+section[class="dragonBall"] p, h3 , .SagaSix p,h3 {
+    color: white;
+    position: absolute;
+    float: left;
+    padding-left: 30%;
+    padding-right: 10%;
+    /* display: none; */
+}
+div[class="contenedorOne"] img[class="dragonBall"] , div[class="contenedorTwo"] img[class="dragonBall"], div[class="contenedorThree"] img[class="dragonBall"], div[class="contenedorFour"] img[class="dragonBall"], div[class="contenedorFive"] img[class="dragonBall"] {
+    /*Bajo un poco la imagen dandole un espacio superior de 3px*/
+    width: 25%;/*Le digo que ocupe el 99% de su padre*/
+    /*Le doy un borde solido de 2 pixeles y negro*/
+    border-radius: 25px;/*Le doy radio al borde de 25 pixeles*/
+    height: auto;/*Le doy un alto del 98%*/
+    z-index: 1;/*Le doy un z-index en 1 para que no tape a el logo*/
+    /*Lo corro un toque a al derecha para que queda centrado*/
+    transition: all 1s;
+    /* min-width: 100px; */
+    margin-top: .5%;
+    display: block;
+}
+
+img[class="dragonBall"] {
+    transition: transform 1.2s;/*Le digo que tenga una transicion en su
+                                 transformacion de 1.2 segundos*/
+}   
+.SagaSix:hover img[class="dragonBall"] {
+    transform: scale(1.02);/*Le digo que se agrande un 20%*/
+}
+
+img[class="portadaOne"] {
+    transition: all 1s;
+}
+
+/*********************/
+div[class="SagaSix"] p {
+    color: whitesmoke;
+}
+
+/*******************MODELADO PAGINA TRES*******************/
+body[class="personajes"] {
+    background-image: none;/*quito la imagen de fondo*/
+}
+.contenedor {
+    margin: 0 auto;/*centro el div que contiene la imagen*/
+    width: 73%;/*y le digo que ocupe el 73 porciento del body*/
+}
+.contenedor img {
+    width: 100%;/*A la imagen dentro del div[class="contenedor"] le digo que 
+                  ocupe el 100 porciento del mismo*/
+}
+
+/**********************MODELADO FORMULARIO**********************/
+
+body[class="bodyForm"] {
+    background-image: none;/*quito la imagen de fondo*/
+    background-color: rgba(0, 0, 0, 0.437);/*Le doy un color de fondo gris
+                                               claro*/
+}
+body[class="bodyForm"] {
+    text-align: center;/*centro todos los elementos fuera del form que esten
+                         dentro del body con clase bodyForm*/
+}
+form {
+    width: 100%;/*le digo que el form ocupe todo el ancho de su contenedor       
+                  section*/
+}
+.bodyForm h1 {
+    font-size: 39px;/*Al titulo principal dentro del body con clase form le doy
+                      una fuente de 39 pixeles*/
+    margin-top: 12px;/*y le doy un espacio superior-exterior de 12 pixeles*/
+}
+.bodyForm p {
+    padding-top: 25px;/*Al parrafo dentro del body con clase bodyForm le doy un
+                        espacio interior de 25px*/
+    font-size: 18px;/*Y una fuente de 18 pixeles*/
+}
+form h2 {
+    margin-top: 50px;/*Al subtitulo h2 dentro del form el doy un espacio interior
+                       superior de 50 pixeles*/
+    background-color: black;/*le doy un color de fondo negro*/
+    color: white;/*Le cambio el color de las letras a blanco*/
+    width: 100%;/*le digo que ocupe todo el ancho de su padre form*/
+    height: 50px;/*angrando el fondo dandole un alto de 50 pixeles  */
+    font-size: 34px;/*cambio el tamaño de la fuente de la letra a 34px */
+    margin: 25px 0;/*le doy un espacio superio&inferior-exterior de 25 pixeles*/
+}
+form label {
+    display: block;/*Los labels dentro del form se va a comportar como bloque
+                    estan separados uno a bajo del otro*/
+    margin: 12px 0;/*Separo los labels que esten dentro del form con un espacio
+                     superior/inferior-exterior de 12 pixeles*/
+    font-size: 16.5px;
+}
+form input[type="text"],input[type="date"], input[type="email"], select {
+    display: block;/*Los inputs y el select dentro del form se va a comportar 
+                     como bloque y van a estar debajo de su respectivo texto*/
+    margin: 0 auto;/*Centro los distintos tipos de inputs y el select*/
+    width: 50%;/*le digo que ocupen el 50 porciento de ancho de su padre form*/
+}
+form input[type="submit"] {
+    display: block;/*Le digo que el input de tipo submit se comporte como bloque
+    */
+    margin: 0 auto;/*Lo centro*/
+    width: 20%;/*y le digo que ocupe el 20 porciento de ancho de su padre form*/
+}
+input, select {
+    border-radius: 5px;/*A todos los inputs y al select le rendondeo las puntas*/
+}
+form .labelOptions {
+    font-size: 16px; /*Agrando la letra fuente de el ante ultimo label*/
+}
+fieldset span {
+    font-size: 22px;/*cambio la el tamaño de la fuente del span dentro del label
+                      a 22 pixeles*/
+}
+.enlinea input{
+    margin-right: 7px;/*Separo un poco el texto de su respectivo input*/
+    margin-top: 34px;/*Separo un toque los inputs dandole un espacio exterior superior de 34 pixeles*/
+}
+
+iframe {
+    display: block;/*Le digo que los iframes se comporten como bloque, es decir,
+                     que esten uno bajo el otro*/
+    margin: 0 auto;/*los centro*/
+    width: 50%;/*Le doy un ancho que ocupa un cincuenta porciento de su padre*/
+    height: 315px;/*y le doy un alto de 315px*/
+}
+iframe:last-child {
+    margin-bottom: 34px;/*Al ultimo iframe le doy un espacio-inferior exterior de
+                          34px*/
+}
+
+.enlineaDos input{
+    display: inline-block;
+    width: unset;
+    text-align: center;
+}
+.enlineaDos label{
+    display: block;
+    text-align: center;
+    margin: 25px;
+}
+.enlineaDos a{
+    text-decoration: underline;/*Al enlace dentro del div con clase enlineaDos le
+                                 devuelve el subrayado*/
+}
+div[class="ButtonsContainer"] {
+    margin: 25px 0;/*Al div con clase ButtonsContainer le doy un un 
+    espacio-exterior superior e inferior de 25 pixeles*/
+}
+@media (max-width: 950px) {
+    iframe {
+        width: 60%;
+    }
+}
+@media (max-width: 730px) {
+    iframe {
+        width: 66%;
+    }
+}
+@media (max-width: 660px) {
+    iframe {
+        width: 70%;
+        height: 200px;
+    }
+}
+@media (max-width: 425px) {
+    iframe {
+        width: 70%;
+        height: 170px;
+    }
+}
+@media (max-width: 375px) {
+    iframe {
+        width: 84%;
+        height: 170px;
+    }
+}
+/*********************************************************************************/
+
+@media (min-width: 1464px){
+    .bodyForm h1 {
+        font-size: 37px;
+    }
+    form h2 {
+        font-size: 35px;
+        height: 55px;
+        padding: 7.7px;
+    }
+    .bodyForm p {
+        font-size: 20px;
+    }
+    form label {
+        font-size: 18px;
+    }
+}
+@media (min-width: 1464px) and (min-width: 1647px){
+    .bodyForm h1 {
+        font-size: 39px;
+    }
+    form h2 {
+        font-size: 37px;
+        height: 60px;
+        padding: 7.3px;
+    }
+    .bodyForm p {
+        font-size: 22px;
+    }
+    form label {
+        font-size: 20px;
+    }
+}
+@media (min-width: 1647px) and (min-width: 1757px){
+    .bodyForm h1 {
+        font-size: 41px;
+    }
+    form h2 {
+        font-size: 39px;
+        height: 65px;
+        padding: 8.4px;
+    }
+    .bodyForm p {
+        font-size: 24px;
+    }
+    form label {
+        font-size: 22px;
+    }
+    div[class="enlinea"] span {
+        font-size: 25px;
+    }
+}
+@media (min-width: 1757px) and (min-width: 1977px) {
+    .bodyForm h1 {
+        margin-top: 10px;
+        font-size: 46px;
+    }
+    form h2 {
+        font-size: 42px;
+        height: 70px;
+        padding: 9.3px;
+    }
+    .bodyForm p {
+        font-size: 26px;
+    }
+    form label {
+        font-size: 25px;
+    }
+}
+@media (min-width: 1977px) and (min-width: 2636px){
+    .bodyForm h1 {
+        margin-top: 10px;
+        font-size: 55px;
+    }
+    form h2 {
+        font-size: 51px;
+        height: 70px;
+        padding: 9.3px;
+    }
+    .bodyForm p {
+        font-size: 35px;
+    }
+    form label {
+        font-size: 34px;
+    }
+}
+@media (max-width: 1230px) {
+    .bodyForm h1 {
+        font-size: 35px;
+    }
+    form h2 {
+        font-size: 33px;
+    }
+}
+@media (max-width: 1105px) {
+    .bodyForm h1 {
+        font-size: 33px;
+    }
+    form h2 {
+        font-size: 31px;
+    }
+}
+@media (max-width: 1042px) {
+    .bodyForm h1 {
+        font-size: 30px;
+    }
+    form h2 {
+        font-size: 28px;
+        padding-top: 5px;
+    }
+}
+
+@media (max-width: 950px) {
+    .bodyForm h1 {
+        font-size: 29px;
+    }
+    form h2 {
+        font-size: 27px;
+        padding-top: 5px;
+    }
+}
+
+@media (max-width: 425px) {
+    .bodyForm h1 {
+        font-size: 27px;
+    }
+    form h2 {
+        font-size: 24px;
+        padding-top: 7px;
+    } 
+    .bodyForm p {
+        font-size: 17px;
+    }
+    .enlinea label{
+        font-size: 18px;
+    }
+}
+@media (max-width: 375px) {
+    form input[type="text"],input[type="number"], input[type="email"], select {
+        width: 57%;
+    }
+    .bodyForm p {
+        font-size: 16px;
+    }
+}
+@media (max-width: 320px) {
+    .bodyForm h1 {
+        font-size: 23px;
+    }
+    form h2 {
+        font-size: 20px;
+        padding-top: 7px;
+    } 
+    .bodyForm p {
+        font-size: 14px;
+    }
+    form input[type="text"],input[type="number"], input[type="email"], select {
+        width: 68%;
+    }
+}
+
+
+
+@media (max-width: 1317px) {
+    .Sagas section[class="Sags"] p {
+        font-size: 20px;
+    }
+}
+@media (max-width: 1217px) {
+    .Sagas section[class="Sags"] p {
+        font-size: 19px;
+    }
+}
+@media (max-width: 1172px) {
+    .Sagas section[class="Sags"] p {
+        font-size: 18px;
+    }
+}
+@media (max-width: 1110px) {
+    .Sagas section[class="Sags"] p {
+        font-size: 17px;
+    }
+}
+@media (max-width: 1061px) {
+    .Sagas section[class="Sags"] p {
+        font-size: 16px;
+    }
+}
+@media (max-width: 1020px) {
+    .Sagas section[class="Sags"] p {
+        font-size: 15px;
+    }
+}
+@media (max-width: 948px) {
+    .Sagas section[class="Sags"] p {
+        font-size: 14px;
+    }
+}
+@media (max-width: 882px) {
+    .Sagas section[class="Sags"] p {
+        font-size: 13px;
+    }
+}
+@media (max-width: 851px) {
+    .Sagas section[class="Sags"] p {
+        font-size: 12px;
+    }
+}

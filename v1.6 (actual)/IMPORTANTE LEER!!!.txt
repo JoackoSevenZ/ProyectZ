@@ -1,1 +1,0 @@
-Los dos componentes de bootstrap estan la segunda pagina en la direccion Proyect DragonBallZ v1.6\Sagas_DragonBall, ya que al ponerlos en la pagina de inicio me sacaba algunos estilos que hacian que la pagina no sea Responsive Desing
