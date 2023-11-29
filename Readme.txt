@@ -11,7 +11,7 @@ IsDragonBall
 
 __Descripcion__
 
-Este un proyecto de pagina wed que muestra las diferentes series y sagas de dragon ball con su respectiva sinopsis y nombra algunos personajes. Proximamente estara disponible el apartado de personajes separado por saga.
+Este es un proyecto de pagina wed que muestra las diferentes series y sagas de dragon ball con su respectiva sinopsis y nombra algunos personajes. Proximamente estara disponible el apartado de personajes separado por saga.
 
 Proximamente__
 
