@@ -1366,35 +1366,35 @@ div[class="SagasOne"] {
     margin-top: 2%;/*Le doy un espacio exterior-superior de 2 porciento*/
     text-align: center;/*centro la imagen dentro del div*/
     width: 35%;/*le digo que ocupe un ancho 35% de su contenedor*/
-    min-width: 270px;/*le doy un ancho minimo de 270 pixeles*/
+    min-width: 370px;/*le doy un ancho minimo de 270 pixeles*/
 }
 div[class="SagasTwo"] {
     margin: 0 auto;/*centro el div con clase SagasTwo*/
     margin-top: 2%;/*Le doy un espacio exterior-superior de 2 porciento*/
     text-align: center;/*centro la imagen dentro del div*/
     width: 33.4%;/*le digo que ocupe un ancho 33.4% de su contenedor*/
-    min-width: 270px;/*le doy un ancho minimo de 270 pixeles*/
+    min-width: 370px;/*le doy un ancho minimo de 270 pixeles*/
 }
 div[class="SagasThree"] {
     margin: 0 auto;/*centro el div con clase SagasThree*/
     margin-top: 2%;/*Le doy un espacio exterior-superior de 2 porciento*/
     text-align: center;/*centro la imagen dentro del div*/
     width: 33.4%;/*le digo que ocupe un ancho 33.4% de su contenedor*/
-    min-width: 270px;/*le doy un ancho minimo de 270 pixeles*/
+    min-width: 370px;/*le doy un ancho minimo de 270 pixeles*/
 }
 div[class="SagasFour"] {
     margin: 0 auto;/*centro el div con clase SagasFour*/
     margin-top: 2%;/*Le doy un espacio exterior-superior de 2 porciento*/
     text-align: center;/*centro la imagen dentro del div*/
     width: 35%;/*le digo que ocupe un ancho 35% de su contenedor*/
-    min-width: 270px;/*le doy un ancho minimo de 270 pixeles*/
+    min-width: 370px;/*le doy un ancho minimo de 270 pixeles*/
 }
 div[class="SagasFive"] {
     margin: 0 auto;/*centro el div con clase SagasFive*/
     margin-top: 2%;/*Le doy un espacio exterior-superior de 2 porciento*/
     text-align: center;/*centro la imagen dentro del div*/
     width: 30%; /*le digo que ocupe un ancho 30% de su contenedor*/
-    min-width: 270px;/*le doy un ancho minimo de 270 pixeles*/
+    min-width: 370px;/*le doy un ancho minimo de 270 pixeles*/
 }
 hr {
     width: 44%;
@@ -1541,11 +1541,10 @@ div[class="contenedorOne"] , div[class="contenedorTwo"], div[class="contenedorTh
     z-index: 1000;
     margin: 0 auto;
     /* background-color: white;     */
-    
     /* min-width: 430px; */
   }
   
-div[class="contenedorOne"] section[class="dragonBall"], div[class="contenedorTwo"] section[class="SagaSix"], div[class="contenedorThree"] section[class="SagaSix"], div[class="contenedorFour"] section[class="SagaSix"], div[class="contenedorFive"] section[class="SagaSix"] {
+div[class="contenedorOne"] section[class="dragonBall"], div[class="contenedorTwo"] section[class="dragonBallZ"], div[class="contenedorThree"] section[class="dragonBallZKai"], div[class="contenedorFour"] section[class="dragonBallGT"], div[class="contenedorFive"] section[class="dragonBallSuper"] {
     margin: 0 auto;/*Centros los div con clase saga que estan dentro de mi seccion
                      contenedor los cuales van a tener las portadas*/
     height: 10%;/*Le doy un ancho del 30%*/
@@ -1569,6 +1568,7 @@ div[class="contenedorOne"] section[class="dragonBall"], div[class="contenedorTwo
 
     /* height: 0; */
     background-color: black;
+    padding: 0;
     transition: padding .1s;
     transition: box-shadow 1s ease;
   }
@@ -1580,46 +1580,57 @@ div[class="contenedorOne"] section[class="dragonBall"], div[class="contenedorTwo
 input[id="checkOne"]:checked ~  div[class="contenedorOne"] section[class="dragonBall"] {
     padding: 20px;
 }
-input[id="checkTwo"]:checked ~  div[class="contenedorTwo"] section[class="SagaSix"] {
+input[id="checkTwo"]:checked ~  div[class="contenedorTwo"] section[class="dragonBallZ"] {
     padding: 20px;
 }
-input[id="checkThree"]:checked ~  div[class="contenedorThree"] section[class="SagaSix"] {
+input[id="checkThree"]:checked ~  div[class="contenedorThree"] section[class="dragonBallZKai"] {
     padding: 20px;
 }
-input[id="checkFour"]:checked ~  div[class="contenedorFour"] section[class="SagaSix"] {
+input[id="checkFour"]:checked ~  div[class="contenedorFour"] section[class="dragonBallGT"] {
     padding: 20px;
 }
-input[id="checkFive"]:checked ~  div[class="contenedorFive"] section[class="SagaSix"] {
+input[id="checkFive"]:checked ~  div[class="contenedorFive"] section[class="dragonBallSuper"] {
     padding: 20px;
 }
 
 
 
 
-.SagaSix:hover {
-    box-shadow: 0 0 12px gold;
-}
-section[class="dragonBall"]:hover {
+section[class="dragonBall"]:hover, section[class="dragonBallZ"]:hover, section[class="dragonBallZKai"]:hover, [class="dragonBallGT"]:hover, [class="dragonBallSuper"]:hover {
     box-shadow: 0 0 12px white;
 }
-section[class="dragonBall"] h3, .SagaSix h3 {
+
+section[class="dragonBall"] h3, section[class="dragonBallZ"] h3, section[class="dragonBallZKai"] h3, section[class="dragonBallGT"] h3, section[class="dragonBallSuper"] h3 {
     margin-top: -2px;
     font-size: 21px;
 }
-section[class="SagaSix"] p, section[class="dragonBall"] p {
-    margin-top: 43px;
+section[class="dragonBall"] p, section[class="dragonBallZ"] p, section[class="dragonBallZKai"] p, section[class="dragonBallGT"] p, section[class="dragonBallSuper"] p {
+
+
+    margin-top: 61px;
+
+
     font-size: 22px;
     /* display: none; */
     font-family: cursive;/*Cambio el tipo de fuente*/
+
+
+    
+    top: 0;
+
 }
-section[class="dragonBall"] p, h3 , .SagaSix p,h3 {
+section[class="dragonBall"] p, h3 , section[class="dragonBallZ"] p, h3, section[class="dragonBallZKai"] p, h3, section[class="dragonBallGT"] p, h3, section[class="dragonBallSuper"] p, h3 {
     color: white;
     position: absolute;
     float: left;
     padding-left: 30%;
-    padding-right: 10%;
+    padding-right: 4%;
     /* display: none; */
 }
+section[class="dragonBall"] p, section[class="dragonBallZ"] p, section[class="dragonBallZKai"] p, section[class="dragonBallGT"] p,section[class="dragonBallSuper"] p  {
+    color: whitesmoke;
+}
+
 div[class="contenedorOne"] img[class="dragonBall"] , div[class="contenedorTwo"] img[class="dragonBall"], div[class="contenedorThree"] img[class="dragonBall"], div[class="contenedorFour"] img[class="dragonBall"], div[class="contenedorFive"] img[class="dragonBall"] {
     /*Bajo un poco la imagen dandole un espacio superior de 3px*/
     width: 25%;/*Le digo que ocupe el 99% de su padre*/
@@ -1634,12 +1645,25 @@ div[class="contenedorOne"] img[class="dragonBall"] , div[class="contenedorTwo"] 
     display: block;
 }
 
-img[class="dragonBall"] {
-    transition: transform 1.2s;/*Le digo que tenga una transicion en su
+img[class="dragonBall"], img[class="dragonBallZ"], img[class="dragonBallZKai"], img[class="dragonBallGT"], img[class="dragonBallSuper"] {
+    transition: transform .5s;/*Le digo que tenga una transicion en su
                                  transformacion de 1.2 segundos*/
-}   
-.SagaSix:hover img[class="dragonBall"] {
-    transform: scale(1.02);/*Le digo que se agrande un 20%*/
+}
+
+.dragonBall:hover img[class="dragonBall"] {
+    transform: scale(1.04);/*Le digo que se agrande un 20%*/
+}
+.dragonBallZ:hover img[class="dragonBall"] {
+    transform: scale(1.04);/*Le digo que se agrande un 20%*/
+}
+.dragonBallZKai:hover img[class="dragonBall"] {
+    transform: scale(1.04);/*Le digo que se agrande un 20%*/
+}
+.dragonBallGT:hover img[class="dragonBall"] {
+    transform: scale(1.04);/*Le digo que se agrande un 20%*/
+}
+.dragonBallSuper:hover img[class="dragonBall"] {
+    transform: scale(1.04);/*Le digo que se agrande un 20%*/
 }
 
 img[class="portadaOne"] {
@@ -1647,11 +1671,143 @@ img[class="portadaOne"] {
 }
 
 /*********************/
-div[class="SagaSix"] p {
-    color: whitesmoke;
+
+
+
+
+
+
+
+@media (max-width: 1317px) {
+    section[class="dragonBall"] p, section[class="dragonBallZ"] p, section[class="dragonBallZKai"] p, section[class="dragonBallGT"] p, section[class="dragonBallSuper"] p {
+        font-size: 20px;
+    }
+}
+@media (max-width: 1217px) {
+    section[class="dragonBall"] p, section[class="dragonBallZ"] p, section[class="dragonBallZKai"] p, section[class="dragonBallGT"] p, section[class="dragonBallSuper"] p {
+        font-size: 19px;
+    }
+}
+@media (max-width: 1172px) {
+    section[class="dragonBall"] p, section[class="dragonBallZ"] p, section[class="dragonBallZKai"] p, section[class="dragonBallGT"] p, section[class="dragonBallSuper"] p {
+        font-size: 18px;
+    }
+}
+@media (max-width: 1110px) {
+    section[class="dragonBall"] p, section[class="dragonBallZ"] p, section[class="dragonBallZKai"] p, section[class="dragonBallGT"] p, section[class="dragonBallSuper"] p {
+        font-size: 17px;
+    }
+}
+@media (max-width: 1075px) {
+    section[class="dragonBall"] h3, section[class="dragonBallZ"] h3, section[class="dragonBallZKai"] h3, section[class="dragonBallGT"] h3, section[class="dragonBallSuper"] h3 {
+        font-size: 20px;
+    }
+}
+@media (max-width: 1061px) {
+    section[class="dragonBall"] p, section[class="dragonBallZ"] p, section[class="dragonBallZKai"] p, section[class="dragonBallGT"] p, section[class="dragonBallSuper"] p {
+        font-size: 16px;
+    }
+}
+@media (max-width: 1024px) {
+    section[class="dragonBall"] h3, section[class="dragonBallZ"] h3, section[class="dragonBallZKai"] h3, section[class="dragonBallGT"] h3, section[class="dragonBallSuper"] h3 {
+        font-size: 19px;
+    }
+}
+@media (max-width: 1020px) {
+    section[class="dragonBall"] p, section[class="dragonBallZ"] p, section[class="dragonBallZKai"] p, section[class="dragonBallGT"] p, section[class="dragonBallSuper"] p {
+        font-size: 15px;
+    }
+}
+@media (max-width: 976px) {
+    section[class="dragonBall"] h3, section[class="dragonBallZ"] h3, section[class="dragonBallZKai"] h3, section[class="dragonBallGT"] h3, section[class="dragonBallSuper"] h3 {
+        font-size: 18px;
+    }
+}
+@media (max-width: 948px) {
+    section[class="dragonBall"] p, section[class="dragonBallZ"] p, section[class="dragonBallZKai"] p, section[class="dragonBallGT"] p, section[class="dragonBallSuper"] p {
+        font-size: 14px;
+    }
+}
+@media (max-width: 928px) {
+    section[class="dragonBall"] h3, section[class="dragonBallZ"] h3, section[class="dragonBallZKai"] h3, section[class="dragonBallGT"] h3, section[class="dragonBallSuper"] h3 {
+        font-size: 17px;
+    }
+}
+@media (max-width: 882px) {
+    section[class="dragonBall"] p, section[class="dragonBallZ"] p, section[class="dragonBallZKai"] p, section[class="dragonBallGT"] p, section[class="dragonBallSuper"] p {
+        font-size: 13px;
+    }
+}
+@media (max-width: 879px) {
+    section[class="dragonBall"] h3, section[class="dragonBallZ"] h3, section[class="dragonBallZKai"] h3, section[class="dragonBallGT"] h3, section[class="dragonBallSuper"] h3 {
+        font-size: 16px;
+    }
+}
+
+
+
+@media (max-width: 851px) {
+
+    div[class="contenedorOne"] , div[class="contenedorTwo"], div[class="contenedorThree"], div[class="contenedorFour"], div[class="contenedorFive"] {
+        width: 81%;
+      }
+
+    section[class="dragonBall"] p, h3, section[class="dragonBallZ"] p, h3, section[class="dragonBallZKai"] p, h3, section[class="dragonBallGT"] p, h3, section[class="dragonBallSuper"] p, h3{
+        float: none;
+        padding: 0;
+        bottom: 0;
+        position: relative;
+    }
+    section[class="dragonBall"] h3, section[class="dragonBallZ"] h3, section[class="dragonBallZKai"] h3, section[class="dragonBallGT"] h3, section[class="dragonBallSuper"] h3 {
+        top: 0;
+        text-align: center;
+        font-size: 23px;
+    }
+    section[class="dragonBall"] p, section[class="dragonBallZ"] p, section[class="dragonBallZKai"] p, section[class="dragonBallGT"] p, section[class="dragonBallSuper"] p {
+        position: inherit;
+        margin-top: 20px;
+        text-align: center;
+        font-size: 17px;
+        padding: 0;
+    }
+    section[class="dragonBall"] img[class="dragonBall"], section[class="dragonBallZ"] img[class="dragonBall"], section[class="dragonBallZKai"] img[class="dragonBall"], section[class="dragonBallGT"] img[class="dragonBall"], section[class="dragonBallSuper"] img[class="dragonBall"] {
+        margin: 0 auto;
+        width: 35.2%;
+        min-width: 180px;
+        margin-top: 20px;
+    }
+
+}
+@media (max-width: 698px) {
+    section[class="dragonBall"] p, section[class="dragonBallZ"] p, section[class="dragonBallZKai"] p, section[class="dragonBallGT"] p, section[class="dragonBallSuper"] p {
+        font-size: 16px;
+    }
+}
+@media (max-width: 543px) {
+    section[class="dragonBall"] p, section[class="dragonBallZ"] p, section[class="dragonBallZKai"] p, section[class="dragonBallGT"] p, section[class="dragonBallSuper"] p {
+        font-size: 15px;
+    }
+}
+@media (max-width: 425px) {
+
+    section[class="dragonBall"] h3, section[class="dragonBallZ"] h3, section[class="dragonBallZKai"] h3, section[class="dragonBallGT"] h3, section[class="dragonBallSuper"] h3 {
+        top: 0;
+        text-align: center;
+        font-size: 21px;
+    }
+    section[class="dragonBall"] p, section[class="dragonBallZ"] p, section[class="dragonBallZKai"] p, section[class="dragonBallGT"] p, section[class="dragonBallSuper"] p {
+        font-size: 12.5px;
+    }
+    section[class="dragonBall"] img[class="dragonBall"], section[class="dragonBallZ"] img[class="dragonBall"], section[class="dragonBallZKai"] img[class="dragonBall"], section[class="dragonBallGT"] img[class="dragonBall"], section[class="dragonBallSuper"] img[class="dragonBall"] {
+        margin: 0 auto;
+        width: 35.2%;
+        min-width: 160px;
+        margin-top: 20px;
+    }
 }
 
 /*******************MODELADO PAGINA TRES*******************/
+
 body[class="personajes"] {
     background-image: none;/*quito la imagen de fondo*/
 }
@@ -1953,50 +2109,3 @@ div[class="ButtonsContainer"] {
     }
 }
 
-
-
-@media (max-width: 1317px) {
-    .Sagas section[class="Sags"] p {
-        font-size: 20px;
-    }
-}
-@media (max-width: 1217px) {
-    .Sagas section[class="Sags"] p {
-        font-size: 19px;
-    }
-}
-@media (max-width: 1172px) {
-    .Sagas section[class="Sags"] p {
-        font-size: 18px;
-    }
-}
-@media (max-width: 1110px) {
-    .Sagas section[class="Sags"] p {
-        font-size: 17px;
-    }
-}
-@media (max-width: 1061px) {
-    .Sagas section[class="Sags"] p {
-        font-size: 16px;
-    }
-}
-@media (max-width: 1020px) {
-    .Sagas section[class="Sags"] p {
-        font-size: 15px;
-    }
-}
-@media (max-width: 948px) {
-    .Sagas section[class="Sags"] p {
-        font-size: 14px;
-    }
-}
-@media (max-width: 882px) {
-    .Sagas section[class="Sags"] p {
-        font-size: 13px;
-    }
-}
-@media (max-width: 851px) {
-    .Sagas section[class="Sags"] p {
-        font-size: 12px;
-    }
-}

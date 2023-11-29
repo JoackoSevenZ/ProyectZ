@@ -15,7 +15,7 @@ document.getElementById("checkOne").addEventListener('change', function() {
         imageOne.style.width = "0px";
 
         // Si el input está chequeado, cambiamos el ancho del div a 71 porciento y el alto en auto
-        divOne.style.width = "71%"
+        divOne.style.width = ""
         divOne.style.height = "auto";
 
         // Si el input está chequeado el logo se agranda 100 porciento de su contenedor
@@ -53,7 +53,7 @@ document.getElementById("checkTwo").addEventListener('change', function() {
     if (this.checked) {
         imageTwo.style.width = "0px";
         
-        divTwo.style.width = "71%"
+        divTwo.style.width = ""
         divTwo.style.height = "auto";
 
         logoTwo.style.width = "100%";
@@ -84,7 +84,7 @@ document.getElementById("checkThree").addEventListener('change', function() {
     if (this.checked) {
         imageThree.style.width = "0px";
         
-        divThree.style.width = "71%"
+        divThree.style.width = ""
         divThree.style.height = "auto";
 
         logoThree.style.width = "100%";
@@ -116,7 +116,7 @@ document.getElementById("checkFour").addEventListener('change', function() {
     if (this.checked) {
         imageFour.style.width = "0px";
         
-        divFour.style.width = "71%"
+        divFour.style.width = ""
         divFour.style.height = "auto";
 
         logoFour.style.width = "100%";
@@ -145,7 +145,7 @@ document.getElementById("checkFive").addEventListener('change', function() {
     if (this.checked) {
         imageFive.style.width = "0px";
         
-        divFive.style.width = "71%"
+        divFive.style.width = ""
         divFive.style.height = "auto";
 
         logoFive.style.width = "100%";
