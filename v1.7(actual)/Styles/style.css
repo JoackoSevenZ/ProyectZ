@@ -1453,6 +1453,22 @@ section[class="logoFive"] {
     cursor: pointer;
     transition: width 1s ease;
 }
+
+@media (max-width: 425px) {
+    div[class="SagasOne"], div[class="SagasTwo"], div[class="SagasThree"], div[class="SagasFour"], div[class="SagasFive"] {
+        min-width: 331px;
+    }
+}
+@media (max-width: 375px) {
+    div[class="SagasOne"], div[class="SagasTwo"], div[class="SagasThree"], div[class="SagasFour"], div[class="SagasFive"] {
+        min-width: 280px;
+    }
+}
+@media (max-width: 320px) {
+    div[class="SagasOne"], div[class="SagasTwo"], div[class="SagasThree"], div[class="SagasFour"], div[class="SagasFive"] {
+        min-width: 250px;
+    }
+}
 /***
 ************************************************************************************/
 
@@ -1796,16 +1812,39 @@ img[class="portadaOne"] {
         font-size: 21px;
     }
     section[class="dragonBall"] p, section[class="dragonBallZ"] p, section[class="dragonBallZKai"] p, section[class="dragonBallGT"] p, section[class="dragonBallSuper"] p {
-        font-size: 12.5px;
+        font-size: 13.3px;
     }
     section[class="dragonBall"] img[class="dragonBall"], section[class="dragonBallZ"] img[class="dragonBall"], section[class="dragonBallZKai"] img[class="dragonBall"], section[class="dragonBallGT"] img[class="dragonBall"], section[class="dragonBallSuper"] img[class="dragonBall"] {
         margin: 0 auto;
         width: 35.2%;
-        min-width: 160px;
+        min-width: 150px;
         margin-top: 20px;
     }
 }
+@media (max-width: 375px) {
 
+    section[class="dragonBall"] h3, section[class="dragonBallZ"] h3, section[class="dragonBallZKai"] h3, section[class="dragonBallGT"] h3, section[class="dragonBallSuper"] h3 {
+        font-size: 20px;
+    }
+    section[class="dragonBall"] p, section[class="dragonBallZ"] p, section[class="dragonBallZKai"] p, section[class="dragonBallGT"] p, section[class="dragonBallSuper"] p {
+        font-size: 13px;
+    }
+    section[class="dragonBall"] img[class="dragonBall"], section[class="dragonBallZ"] img[class="dragonBall"], section[class="dragonBallZKai"] img[class="dragonBall"], section[class="dragonBallGT"] img[class="dragonBall"], section[class="dragonBallSuper"] img[class="dragonBall"] {
+        min-width: 140px;
+    }
+}
+@media (max-width: 320px) {
+
+    section[class="dragonBall"] h3, section[class="dragonBallZ"] h3, section[class="dragonBallZKai"] h3, section[class="dragonBallGT"] h3, section[class="dragonBallSuper"] h3 {
+        font-size: 19px;
+    }
+    section[class="dragonBall"] p, section[class="dragonBallZ"] p, section[class="dragonBallZKai"] p, section[class="dragonBallGT"] p, section[class="dragonBallSuper"] p {
+        font-size: 12.7px;
+    }
+    section[class="dragonBall"] img[class="dragonBall"], section[class="dragonBallZ"] img[class="dragonBall"], section[class="dragonBallZKai"] img[class="dragonBall"], section[class="dragonBallGT"] img[class="dragonBall"], section[class="dragonBallSuper"] img[class="dragonBall"] {
+        min-width: 130px;
+    }
+}
 /*******************MODELADO PAGINA TRES*******************/
 
 body[class="personajes"] {
