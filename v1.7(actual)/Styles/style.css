@@ -1839,10 +1839,10 @@ img[class="portadaOne"] {
         font-size: 19px;
     }
     section[class="dragonBall"] p, section[class="dragonBallZ"] p, section[class="dragonBallZKai"] p, section[class="dragonBallGT"] p, section[class="dragonBallSuper"] p {
-        font-size: 12.7px;
+        font-size: 13px;
     }
     section[class="dragonBall"] img[class="dragonBall"], section[class="dragonBallZ"] img[class="dragonBall"], section[class="dragonBallZKai"] img[class="dragonBall"], section[class="dragonBallGT"] img[class="dragonBall"], section[class="dragonBallSuper"] img[class="dragonBall"] {
-        min-width: 130px;
+        min-width: 120px;
     }
 }
 /*******************MODELADO PAGINA TRES*******************/
