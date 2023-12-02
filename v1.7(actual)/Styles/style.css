@@ -1628,7 +1628,7 @@ section[class="dragonBall"] p, section[class="dragonBallZ"] p, section[class="dr
 
     font-size: 22px;
     /* display: none; */
-    font-family: cursive;/*Cambio el tipo de fuente*/
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;/*Cambio el tipo de fuente*/
 
 
     
@@ -1801,7 +1801,7 @@ img[class="portadaOne"] {
 }
 @media (max-width: 543px) {
     section[class="dragonBall"] p, section[class="dragonBallZ"] p, section[class="dragonBallZKai"] p, section[class="dragonBallGT"] p, section[class="dragonBallSuper"] p {
-        font-size: 15px;
+        font-size: 16px;
     }
 }
 @media (max-width: 425px) {
@@ -2148,3 +2148,6 @@ div[class="ButtonsContainer"] {
     }
 }
 
+
+
+/*Cambios tamaño y tipo de fuente*/
