@@ -15,7 +15,7 @@ document.getElementById("checkOne").addEventListener('change', function() {
         imageOne.style.width = "0px";
 
         // Si el input está chequeado, cambiamos el ancho del div a 71 porciento y el alto en auto
-        divOne.style.width = ""
+        divOne.style.width = "";
         divOne.style.height = "auto";
 
         // Si el input está chequeado el logo se agranda 100 porciento de su contenedor
@@ -38,7 +38,7 @@ document.getElementById("checkOne").addEventListener('change', function() {
 
          // Si el input está deschequeado el hr o separador vuelve a su ancho por defecto
         separadorOne.style.width = "";
-
+        
     }
 });
 /**************************************************************************/
